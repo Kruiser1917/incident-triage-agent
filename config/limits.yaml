@@ -1,0 +1,6 @@
+# Per-run stop conditions. Hitting any of them -> escalate with a partial report.
+max_steps: 12
+max_cost_usd: 0.15
+timeout_s: 90
+# Provider bills in RUB; fixed rate keeps reported USD costs reproducible across runs.
+rub_per_usd: 85.0
