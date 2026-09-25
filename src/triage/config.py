@@ -16,51 +16,84 @@ Contract (enforced by tests/test_config.py):
 from __future__ import annotations
 
 from pathlib import Path
+from typing import Self
 
-from pydantic import BaseModel
+import yaml
+from pydantic import BaseModel, ConfigDict, Field, PositiveFloat, PositiveInt, model_validator
 
 REQUIRED_STEPS: frozenset[str] = frozenset({"classify", "investigate", "hypothesize", "judge"})
 
 
-class ProviderConfig(BaseModel):
+class _StrictModel(BaseModel):
+    """Base for all config models: unknown keys are errors, loaded configs are read-only."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+
+class ProviderConfig(_StrictModel):
     """Where to find credentials for an OpenAI-compatible provider.
 
     Holds env var *names* (e.g. ``LLM_API_KEY``), never secret values.
     """
 
-    # TODO: fields base_url_env, api_key_env
+    base_url_env: str
+    api_key_env: str
 
 
-class StepConfig(BaseModel):
+class StepConfig(_StrictModel):
     """Model settings for one agent step."""
 
-    # TODO: fields provider, model, temperature, max_output_tokens
+    provider: str
+    model: str
+    temperature: float = Field(ge=0, le=2)
+    max_output_tokens: PositiveInt
 
 
-class EmbeddingsConfig(BaseModel):
+class EmbeddingsConfig(_StrictModel):
     """Embedding model used for runbook retrieval."""
 
-    # TODO: fields provider, model, dimensions
+    provider: str
+    model: str
+    dimensions: PositiveInt
 
 
-class ModelsConfig(BaseModel):
+class ModelsConfig(_StrictModel):
     """Root of config/models.yaml."""
 
-    # TODO: fields providers, steps, embeddings
-    # TODO: a model validator for provider references and required steps
+    providers: dict[str, ProviderConfig]
+    steps: dict[str, StepConfig]
+    embeddings: EmbeddingsConfig
+
+    @model_validator(mode="after")
+    def _check_cross_references(self) -> Self:
+        # Field types are already valid here; these checks need several fields at once.
+        missing = REQUIRED_STEPS - self.steps.keys()
+        if missing:
+            raise ValueError(f"missing required steps: {sorted(missing)}")
+
+        referenced = {step.provider for step in self.steps.values()} | {self.embeddings.provider}
+        unknown = referenced - self.providers.keys()
+        if unknown:
+            raise ValueError(f"unknown providers referenced: {sorted(unknown)}")
+        return self
 
 
-class LimitsConfig(BaseModel):
+class LimitsConfig(_StrictModel):
     """Root of config/limits.yaml: per-run stop conditions."""
 
-    # TODO: fields max_steps, max_cost_usd, timeout_s, rub_per_usd
+    max_steps: PositiveInt
+    max_cost_usd: PositiveFloat
+    timeout_s: PositiveInt
+    rub_per_usd: PositiveFloat
 
 
 def load_models_config(path: Path) -> ModelsConfig:
     """Parse and validate config/models.yaml."""
-    raise NotImplementedError
+    data = yaml.safe_load(path.read_text())
+    return ModelsConfig.model_validate(data)
 
 
 def load_limits_config(path: Path) -> LimitsConfig:
     """Parse and validate config/limits.yaml."""
-    raise NotImplementedError
+    data = yaml.safe_load(path.read_text())
+    return LimitsConfig.model_validate(data)
