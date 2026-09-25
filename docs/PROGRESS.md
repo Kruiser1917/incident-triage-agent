@@ -12,9 +12,9 @@
 - `make up-obs` verified locally: Langfuse 3.225.9 healthy on :3100, ~2.3 GB RAM total.
 - Provider probe: tool calling, strict structured output, embeddings and `usage.cost_rub` all work.
 
-### Open
-- **[OWNER WRITES]** `src/triage/config.py` — make `tests/test_config.py` pass.
+- Typed config loader `src/triage/config.py`: 15/15 unit tests, lint and mypy clean.
 
+### Open
 - Open PR `phase-0/scaffold` -> `main`; phase 0 interview questions.
 
 ### Decisions
@@ -22,9 +22,11 @@
 - Langfuse in an opt-in compose profile.
 - Held-out test split (ADR-0002).
 - Cost tracked in RUB as reported by the provider, converted with a fixed rate.
+- 2026-09-25: working mode changed — owner orchestrates and reviews, Claude implements and
+  explains ([OWNER DECIDES] instead of [OWNER WRITES]; manual labeling stays manual).
 
 ### Notes
 - Provider budget is small (checked 2026-09-22); prefer cheap models during development.
 
 ### Next step
-Owner implements the config loader; then review, PR, phase 0 questions.
+Owner opens the PR; phase 0 interview questions; then phase 1 plan (simulator + golden set).

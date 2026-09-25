@@ -25,8 +25,13 @@ and must be able to explain every decision in an interview.
 - Before coding a phase: a 5–10 point plan, then wait for the owner's approval.
 - Every non-trivial architectural decision gets an ADR in `docs/adr/NNNN-short-title.md`
   (context, decision, alternatives, consequences).
-- Parts marked **[OWNER WRITES]** are written by the owner. Provide skeletons, signatures,
-  tests and hints, then review. If asked to write them anyway, remind once, then comply.
+- The owner works as a tech lead directing an AI assistant: Claude implements; the owner
+  sets goals, makes design decisions and reviews. After each non-trivial piece, explain
+  how it works and why, in plain language with everyday analogies (not DevOps ones), so
+  the owner can defend it in an interview.
+- Parts the brief marked as owner-written are now **[OWNER DECIDES]**: Claude presents
+  options with trade-offs, the owner chooses, Claude implements and explains.
+  Exception: manual labeling for judge calibration stays manual (it is the human ground truth).
 - End each phase with 5 interview-style questions about the work.
 - Be direct about bad ideas; propose alternatives.
 - Conversation with the owner is in Russian; everything in the repo is in English.
