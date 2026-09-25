@@ -1,0 +1,33 @@
+# Model per agent step. Provider credentials come from .env, never from this file.
+# Model choices are provisional until measured (see docs/adr/0001-tech-stack.md).
+providers:
+  polza:
+    base_url_env: LLM_BASE_URL
+    api_key_env: LLM_API_KEY
+
+steps:
+  classify:     # cheap and fast: incident class + investigation plan
+    provider: polza
+    model: deepseek/deepseek-v4-flash
+    temperature: 0.0
+    max_output_tokens: 1024
+  investigate:  # ReAct tool-calling loop
+    provider: polza
+    model: deepseek/deepseek-v4-flash
+    temperature: 0.0
+    max_output_tokens: 2048
+  hypothesize:  # strong model: root cause + evidence (structured output)
+    provider: polza
+    model: deepseek/deepseek-v4-flash
+    temperature: 0.0
+    max_output_tokens: 2048
+  judge:        # LLM judge for evals; chosen after calibration (phase 7)
+    provider: polza
+    model: deepseek/deepseek-v4-flash
+    temperature: 0.0
+    max_output_tokens: 1024
+
+embeddings:
+  provider: polza
+  model: openai/text-embedding-3-small
+  dimensions: 1536
