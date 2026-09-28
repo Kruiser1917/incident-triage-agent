@@ -1,0 +1,101 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.12.2",
+    "service": "orders-service",
+    "ts": "2026-02-26T10:55:00Z",
+    "version": "v2.12.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0210",
+    "service": "api-gateway",
+    "ts": "2026-02-26T11:38:00Z",
+    "version": "cfg-0211"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.21.1",
+    "service": "ledger-service",
+    "ts": "2026-02-26T14:14:00Z",
+    "version": "v1.22.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.3",
+    "service": "payments-service",
+    "ts": "2026-02-27T09:13:00Z",
+    "version": "v3.9.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.22.0",
+    "service": "ledger-service",
+    "ts": "2026-03-01T15:11:00Z",
+    "version": "v1.23.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.12.3",
+    "service": "orders-service",
+    "ts": "2026-03-01T17:01:00Z",
+    "version": "v2.12.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.12.4",
+    "service": "orders-service",
+    "ts": "2026-03-03T09:13:00Z",
+    "version": "v2.12.5"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.34.0",
+    "service": "api-gateway",
+    "ts": "2026-03-03T10:49:00Z",
+    "version": "v1.35.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.35.0",
+    "service": "api-gateway",
+    "ts": "2026-03-03T13:08:00Z",
+    "version": "v1.36.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0154",
+    "service": "ledger-service",
+    "ts": "2026-03-04T19:45:33Z",
+    "version": "cfg-0155"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Recalculate running balance on every entry post",
+    "previous_version": "v1.23.0",
+    "service": "ledger-service",
+    "ts": "2026-03-04T19:56:44Z",
+    "version": "v1.23.1"
+  }
+]

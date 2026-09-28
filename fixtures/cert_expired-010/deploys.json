@@ -1,0 +1,83 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.34.1",
+    "service": "api-gateway",
+    "ts": "2026-03-19T10:41:00Z",
+    "version": "v1.34.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.34.2",
+    "service": "api-gateway",
+    "ts": "2026-03-20T10:43:00Z",
+    "version": "v1.35.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.14.3",
+    "service": "orders-service",
+    "ts": "2026-03-20T10:48:00Z",
+    "version": "v2.14.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.35.0",
+    "service": "api-gateway",
+    "ts": "2026-03-20T16:53:00Z",
+    "version": "v1.35.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-03-22T10:29:00Z",
+    "version": "v1.22.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.22.2",
+    "service": "ledger-service",
+    "ts": "2026-03-22T11:01:00Z",
+    "version": "v1.22.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.3",
+    "service": "ledger-service",
+    "ts": "2026-03-23T10:43:00Z",
+    "version": "v1.22.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.4",
+    "service": "ledger-service",
+    "ts": "2026-03-24T10:27:00Z",
+    "version": "v1.22.5"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0331",
+    "service": "orders-service",
+    "ts": "2026-03-26T20:21:46Z",
+    "version": "cfg-0332"
+  }
+]

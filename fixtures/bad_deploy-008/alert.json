@@ -1,0 +1,44 @@
+{
+  "alerts": [
+    {
+      "annotations": {
+        "description": "orders-service p95 latency is 1179ms (threshold 1000ms).",
+        "runbook_url": "https://runbooks.internal/alerts/HighLatencyP95",
+        "summary": "p95 latency > 1000ms for 5m"
+      },
+      "endsAt": "0001-01-01T00:00:00Z",
+      "fingerprint": "dfb4a15c265767f6",
+      "generatorURL": "http://prometheus.prod.internal:9090/graph?g0.expr=histogram_quantile%280.95%2C%20sum%20by%20%28le%29%20%28rate%28http_request_duration_seconds_bucket%7Bservice%3D%22orders-service%22%7D%5B5m%5D%29%29%29%20%3E%201",
+      "labels": {
+        "alertname": "HighLatencyP95",
+        "namespace": "prod",
+        "service": "orders-service",
+        "severity": "warning",
+        "team": "orders-team"
+      },
+      "startsAt": "2026-03-14T18:47:15Z",
+      "status": "firing"
+    }
+  ],
+  "commonAnnotations": {
+    "description": "orders-service p95 latency is 1179ms (threshold 1000ms).",
+    "runbook_url": "https://runbooks.internal/alerts/HighLatencyP95",
+    "summary": "p95 latency > 1000ms for 5m"
+  },
+  "commonLabels": {
+    "alertname": "HighLatencyP95",
+    "namespace": "prod",
+    "service": "orders-service",
+    "severity": "warning",
+    "team": "orders-team"
+  },
+  "externalURL": "http://alertmanager.prod.internal:9093",
+  "groupKey": "{}:{alertname=\"HighLatencyP95\"}",
+  "groupLabels": {
+    "alertname": "HighLatencyP95"
+  },
+  "receiver": "triage-agent",
+  "status": "firing",
+  "truncatedAlerts": 0,
+  "version": "4"
+}

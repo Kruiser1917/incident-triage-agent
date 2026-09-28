@@ -1,0 +1,92 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.33.3",
+    "service": "api-gateway",
+    "ts": "2026-03-07T15:04:00Z",
+    "version": "v1.33.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.33.4",
+    "service": "api-gateway",
+    "ts": "2026-03-08T11:57:00Z",
+    "version": "v1.33.5"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0158",
+    "service": "payments-service",
+    "ts": "2026-03-09T20:19:00Z",
+    "version": "cfg-0159"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-10T09:21:00Z",
+    "version": "v3.6.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.6.4",
+    "service": "payments-service",
+    "ts": "2026-03-10T17:15:00Z",
+    "version": "v3.6.5"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0171",
+    "service": "api-gateway",
+    "ts": "2026-03-11T09:30:00Z",
+    "version": "cfg-0172"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.10.2",
+    "service": "orders-service",
+    "ts": "2026-03-11T13:20:00Z",
+    "version": "v2.11.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.5",
+    "service": "payments-service",
+    "ts": "2026-03-11T14:29:00Z",
+    "version": "v3.6.6"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set maxmemory-policy noeviction (was allkeys-lru)",
+    "previous_version": "cfg-0261",
+    "service": "redis",
+    "ts": "2026-03-11T21:46:00Z",
+    "version": "cfg-0262"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.11.0",
+    "service": "orders-service",
+    "ts": "2026-03-12T09:08:00Z",
+    "version": "v2.11.1"
+  }
+]

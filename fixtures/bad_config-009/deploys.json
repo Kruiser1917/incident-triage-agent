@@ -1,0 +1,110 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0110",
+    "service": "orders-service",
+    "ts": "2026-03-04T11:43:00Z",
+    "version": "cfg-0111"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.19.3",
+    "service": "ledger-service",
+    "ts": "2026-03-04T13:19:00Z",
+    "version": "v1.20.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.20.0",
+    "service": "ledger-service",
+    "ts": "2026-03-04T16:56:00Z",
+    "version": "v1.20.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.20.1",
+    "service": "ledger-service",
+    "ts": "2026-03-05T14:39:00Z",
+    "version": "v1.21.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0111",
+    "service": "orders-service",
+    "ts": "2026-03-07T15:53:00Z",
+    "version": "cfg-0112"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.21.0",
+    "service": "ledger-service",
+    "ts": "2026-03-08T10:58:00Z",
+    "version": "v1.21.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.7.1",
+    "service": "payments-service",
+    "ts": "2026-03-08T14:15:00Z",
+    "version": "v3.7.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0396",
+    "service": "api-gateway",
+    "ts": "2026-03-09T13:13:00Z",
+    "version": "cfg-0397"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.15.1",
+    "service": "orders-service",
+    "ts": "2026-03-09T15:18:00Z",
+    "version": "v2.16.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.16.0",
+    "service": "orders-service",
+    "ts": "2026-03-10T13:36:00Z",
+    "version": "v2.16.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set PROVIDER_READ_TIMEOUT_MS=200 (was 2000)",
+    "previous_version": "cfg-0172",
+    "service": "payments-service",
+    "ts": "2026-03-11T15:09:00Z",
+    "version": "cfg-0173"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0173",
+    "service": "payments-service",
+    "ts": "2026-03-11T15:39:12Z",
+    "version": "cfg-0174"
+  }
+]

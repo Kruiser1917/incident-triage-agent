@@ -1,0 +1,110 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.33.0",
+    "service": "api-gateway",
+    "ts": "2026-03-15T16:54:00Z",
+    "version": "v1.34.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.11.2",
+    "service": "orders-service",
+    "ts": "2026-03-16T10:08:00Z",
+    "version": "v2.11.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.11.3",
+    "service": "orders-service",
+    "ts": "2026-03-16T15:47:00Z",
+    "version": "v2.11.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0287",
+    "service": "orders-service",
+    "ts": "2026-03-16T16:14:00Z",
+    "version": "cfg-0288"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.21.3",
+    "service": "ledger-service",
+    "ts": "2026-03-16T17:18:00Z",
+    "version": "v1.21.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.34.0",
+    "service": "api-gateway",
+    "ts": "2026-03-17T10:11:00Z",
+    "version": "v1.34.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.11.4",
+    "service": "orders-service",
+    "ts": "2026-03-17T10:16:00Z",
+    "version": "v2.11.5"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.21.4",
+    "service": "ledger-service",
+    "ts": "2026-03-17T14:33:00Z",
+    "version": "v1.21.5"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.21.5",
+    "service": "ledger-service",
+    "ts": "2026-03-17T15:22:00Z",
+    "version": "v1.21.6"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-17T16:16:00Z",
+    "version": "v3.9.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.11.5",
+    "service": "orders-service",
+    "ts": "2026-03-18T17:04:00Z",
+    "version": "v2.11.6"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-19T11:53:00Z",
+    "version": "v3.9.2"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.0",
+    "service": "api-gateway",
+    "ts": "2026-02-26T17:24:00Z",
+    "version": "v1.32.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.24.2",
+    "service": "ledger-service",
+    "ts": "2026-02-28T15:12:00Z",
+    "version": "v1.24.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.1",
+    "service": "api-gateway",
+    "ts": "2026-02-28T20:54:00Z",
+    "version": "v1.32.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0307",
+    "service": "orders-service",
+    "ts": "2026-03-01T09:51:00Z",
+    "version": "cfg-0308"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.0",
+    "service": "payments-service",
+    "ts": "2026-03-01T17:33:00Z",
+    "version": "v3.6.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.6.1",
+    "service": "payments-service",
+    "ts": "2026-03-02T11:51:00Z",
+    "version": "v3.6.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.14.0",
+    "service": "orders-service",
+    "ts": "2026-03-04T11:09:00Z",
+    "version": "v2.14.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.6.2",
+    "service": "payments-service",
+    "ts": "2026-03-04T16:29:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Apply geo risk rules to the 3DS2 challenge flow",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-05T15:36:16Z",
+    "version": "v3.7.1"
+  }
+]

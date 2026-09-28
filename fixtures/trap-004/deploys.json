@@ -1,0 +1,119 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0175",
+    "service": "ledger-service",
+    "ts": "2026-02-28T09:25:00Z",
+    "version": "cfg-0176"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.31.2",
+    "service": "api-gateway",
+    "ts": "2026-02-28T20:27:00Z",
+    "version": "v1.31.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.31.3",
+    "service": "api-gateway",
+    "ts": "2026-02-28T20:53:00Z",
+    "version": "v1.31.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.5.1",
+    "service": "payments-service",
+    "ts": "2026-03-01T09:29:00Z",
+    "version": "v3.5.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.13.1",
+    "service": "orders-service",
+    "ts": "2026-03-01T14:03:00Z",
+    "version": "v2.13.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0318",
+    "service": "payments-service",
+    "ts": "2026-03-03T09:34:00Z",
+    "version": "cfg-0319"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0398",
+    "service": "api-gateway",
+    "ts": "2026-03-04T11:45:00Z",
+    "version": "cfg-0399"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.31.4",
+    "service": "api-gateway",
+    "ts": "2026-03-04T15:37:00Z",
+    "version": "v1.32.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0265",
+    "service": "orders-service",
+    "ts": "2026-03-04T15:54:00Z",
+    "version": "cfg-0266"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-03-04T16:20:00Z",
+    "version": "v3.5.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0319",
+    "service": "payments-service",
+    "ts": "2026-03-05T13:35:00Z",
+    "version": "cfg-0320"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.24.1",
+    "service": "ledger-service",
+    "ts": "2026-03-06T11:39:00Z",
+    "version": "v1.24.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.13.2",
+    "service": "orders-service",
+    "ts": "2026-03-06T20:58:00Z",
+    "version": "v2.13.3"
+  }
+]

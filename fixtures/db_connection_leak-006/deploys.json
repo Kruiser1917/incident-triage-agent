@@ -1,0 +1,101 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.6.2",
+    "service": "payments-service",
+    "ts": "2026-03-03T10:35:00Z",
+    "version": "v3.6.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-03T11:10:00Z",
+    "version": "v3.6.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.31.2",
+    "service": "api-gateway",
+    "ts": "2026-03-04T11:56:00Z",
+    "version": "v1.31.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.24.2",
+    "service": "ledger-service",
+    "ts": "2026-03-04T16:34:00Z",
+    "version": "v1.24.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.10.2",
+    "service": "orders-service",
+    "ts": "2026-03-04T17:55:00Z",
+    "version": "v2.11.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.4",
+    "service": "payments-service",
+    "ts": "2026-03-05T10:45:00Z",
+    "version": "v3.6.5"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.6.5",
+    "service": "payments-service",
+    "ts": "2026-03-06T17:21:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-07T17:22:00Z",
+    "version": "v3.8.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0370",
+    "service": "api-gateway",
+    "ts": "2026-03-08T15:35:00Z",
+    "version": "cfg-0371"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0212",
+    "service": "payments-service",
+    "ts": "2026-03-09T16:40:00Z",
+    "version": "cfg-0213"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Move order CSV export to a background worker",
+    "previous_version": "v2.11.0",
+    "service": "orders-service",
+    "ts": "2026-03-10T12:59:15Z",
+    "version": "v2.12.0"
+  }
+]

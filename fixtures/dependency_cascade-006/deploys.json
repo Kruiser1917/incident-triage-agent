@@ -1,0 +1,74 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0137",
+    "service": "ledger-service",
+    "ts": "2026-03-03T17:31:00Z",
+    "version": "cfg-0138"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.11.3",
+    "service": "orders-service",
+    "ts": "2026-03-05T09:03:00Z",
+    "version": "v2.12.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.24.3",
+    "service": "ledger-service",
+    "ts": "2026-03-06T15:14:00Z",
+    "version": "v1.24.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.31.1",
+    "service": "api-gateway",
+    "ts": "2026-03-06T16:28:00Z",
+    "version": "v1.32.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.32.0",
+    "service": "api-gateway",
+    "ts": "2026-03-07T20:08:00Z",
+    "version": "v1.32.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.32.1",
+    "service": "api-gateway",
+    "ts": "2026-03-08T13:45:00Z",
+    "version": "v1.32.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0351",
+    "service": "payments-service",
+    "ts": "2026-03-10T09:14:00Z",
+    "version": "cfg-0352"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.32.2",
+    "service": "api-gateway",
+    "ts": "2026-03-10T10:42:00Z",
+    "version": "v1.32.3"
+  }
+]

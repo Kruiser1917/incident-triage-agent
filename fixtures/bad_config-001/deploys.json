@@ -1,0 +1,137 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.23.1",
+    "service": "ledger-service",
+    "ts": "2026-03-04T09:03:00Z",
+    "version": "v1.23.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.28.1",
+    "service": "api-gateway",
+    "ts": "2026-03-04T14:17:00Z",
+    "version": "v1.28.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.23.2",
+    "service": "ledger-service",
+    "ts": "2026-03-04T17:06:00Z",
+    "version": "v1.23.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.23.3",
+    "service": "ledger-service",
+    "ts": "2026-03-05T14:53:00Z",
+    "version": "v1.23.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.28.2",
+    "service": "api-gateway",
+    "ts": "2026-03-05T15:46:00Z",
+    "version": "v1.29.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0320",
+    "service": "payments-service",
+    "ts": "2026-03-06T11:02:00Z",
+    "version": "cfg-0321"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.11.2",
+    "service": "orders-service",
+    "ts": "2026-03-06T11:59:00Z",
+    "version": "v2.12.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.0",
+    "service": "api-gateway",
+    "ts": "2026-03-07T09:44:00Z",
+    "version": "v1.29.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-09T14:48:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-10T14:55:00Z",
+    "version": "v3.7.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.7.1",
+    "service": "payments-service",
+    "ts": "2026-03-10T17:48:00Z",
+    "version": "v3.7.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.29.1",
+    "service": "api-gateway",
+    "ts": "2026-03-10T20:48:00Z",
+    "version": "v1.29.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.23.4",
+    "service": "ledger-service",
+    "ts": "2026-03-10T20:58:00Z",
+    "version": "v1.24.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.12.0",
+    "service": "orders-service",
+    "ts": "2026-03-11T09:50:00Z",
+    "version": "v2.13.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set PROVIDER_READ_TIMEOUT_MS=200 (was 2000)",
+    "previous_version": "cfg-0321",
+    "service": "payments-service",
+    "ts": "2026-03-11T13:58:03Z",
+    "version": "cfg-0322"
+  }
+]

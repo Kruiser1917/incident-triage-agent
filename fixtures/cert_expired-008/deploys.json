@@ -1,0 +1,83 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-03-12T15:25:00Z",
+    "version": "v3.8.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0210",
+    "service": "orders-service",
+    "ts": "2026-03-14T17:57:00Z",
+    "version": "cfg-0211"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.3",
+    "service": "payments-service",
+    "ts": "2026-03-15T10:14:00Z",
+    "version": "v3.8.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0346",
+    "service": "api-gateway",
+    "ts": "2026-03-15T16:12:00Z",
+    "version": "cfg-0347"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0211",
+    "service": "orders-service",
+    "ts": "2026-03-16T11:54:00Z",
+    "version": "cfg-0212"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.8.4",
+    "service": "payments-service",
+    "ts": "2026-03-16T15:33:00Z",
+    "version": "v3.8.5"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0386",
+    "service": "ledger-service",
+    "ts": "2026-03-16T17:20:00Z",
+    "version": "cfg-0387"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.8.5",
+    "service": "payments-service",
+    "ts": "2026-03-18T15:19:00Z",
+    "version": "v3.8.6"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0132",
+    "service": "payments-service",
+    "ts": "2026-03-19T09:25:00Z",
+    "version": "cfg-0133"
+  }
+]

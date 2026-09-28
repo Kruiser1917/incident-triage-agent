@@ -1,0 +1,110 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.12.0",
+    "service": "orders-service",
+    "ts": "2026-02-25T09:05:00Z",
+    "version": "v2.12.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.7.3",
+    "service": "payments-service",
+    "ts": "2026-02-25T17:08:00Z",
+    "version": "v3.8.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.12.1",
+    "service": "orders-service",
+    "ts": "2026-02-26T14:07:00Z",
+    "version": "v2.12.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0142",
+    "service": "orders-service",
+    "ts": "2026-02-26T16:11:00Z",
+    "version": "cfg-0143"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0354",
+    "service": "api-gateway",
+    "ts": "2026-02-27T14:55:00Z",
+    "version": "cfg-0355"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.19.0",
+    "service": "ledger-service",
+    "ts": "2026-02-27T17:08:00Z",
+    "version": "v1.19.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.29.0",
+    "service": "api-gateway",
+    "ts": "2026-02-28T20:16:00Z",
+    "version": "v1.30.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0304",
+    "service": "payments-service",
+    "ts": "2026-03-01T11:05:00Z",
+    "version": "cfg-0305"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.1",
+    "service": "ledger-service",
+    "ts": "2026-03-01T13:39:00Z",
+    "version": "v1.19.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.30.0",
+    "service": "api-gateway",
+    "ts": "2026-03-01T13:43:00Z",
+    "version": "v1.31.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.0",
+    "service": "payments-service",
+    "ts": "2026-03-02T14:15:00Z",
+    "version": "v3.9.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-02T16:57:00Z",
+    "version": "v3.9.1"
+  }
+]

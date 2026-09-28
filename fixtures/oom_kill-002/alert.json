@@ -2,7 +2,7 @@
   "alerts": [
     {
       "annotations": {
-        "description": "6 container restarts across orders-service pods in the last hour.",
+        "description": "3 container restarts across orders-service pods in the last hour.",
         "runbook_url": "https://runbooks.internal/alerts/PodRestartsHigh",
         "summary": "3+ container restarts in 1h"
       },
@@ -21,7 +21,7 @@
     }
   ],
   "commonAnnotations": {
-    "description": "6 container restarts across orders-service pods in the last hour.",
+    "description": "3 container restarts across orders-service pods in the last hour.",
     "runbook_url": "https://runbooks.internal/alerts/PodRestartsHigh",
     "summary": "3+ container restarts in 1h"
   },

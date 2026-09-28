@@ -1,0 +1,119 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.1",
+    "service": "api-gateway",
+    "ts": "2026-03-17T10:01:00Z",
+    "version": "v1.32.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.32.2",
+    "service": "api-gateway",
+    "ts": "2026-03-17T14:38:00Z",
+    "version": "v1.32.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.10.3",
+    "service": "orders-service",
+    "ts": "2026-03-17T20:47:00Z",
+    "version": "v2.10.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-03-18T10:21:00Z",
+    "version": "v3.8.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.10.4",
+    "service": "orders-service",
+    "ts": "2026-03-18T13:18:00Z",
+    "version": "v2.10.5"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.32.3",
+    "service": "api-gateway",
+    "ts": "2026-03-20T09:28:00Z",
+    "version": "v1.32.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.20.0",
+    "service": "ledger-service",
+    "ts": "2026-03-20T11:42:00Z",
+    "version": "v1.20.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0371",
+    "service": "payments-service",
+    "ts": "2026-03-20T16:08:00Z",
+    "version": "cfg-0372"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.10.5",
+    "service": "orders-service",
+    "ts": "2026-03-20T20:30:00Z",
+    "version": "v2.10.6"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.20.1",
+    "service": "ledger-service",
+    "ts": "2026-03-21T17:09:00Z",
+    "version": "v1.20.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0189",
+    "service": "api-gateway",
+    "ts": "2026-03-22T15:42:00Z",
+    "version": "cfg-0190"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.20.2",
+    "service": "ledger-service",
+    "ts": "2026-03-23T09:50:00Z",
+    "version": "v1.20.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.10.6",
+    "service": "orders-service",
+    "ts": "2026-03-23T17:40:00Z",
+    "version": "v2.11.0"
+  }
+]

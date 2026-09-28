@@ -1,0 +1,92 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.20.0",
+    "service": "ledger-service",
+    "ts": "2026-03-14T09:49:00Z",
+    "version": "v1.21.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.21.0",
+    "service": "ledger-service",
+    "ts": "2026-03-14T17:48:00Z",
+    "version": "v1.22.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-15T15:08:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0175",
+    "service": "api-gateway",
+    "ts": "2026-03-15T15:58:00Z",
+    "version": "cfg-0176"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.10.0",
+    "service": "orders-service",
+    "ts": "2026-03-16T13:27:00Z",
+    "version": "v2.10.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.30.0",
+    "service": "api-gateway",
+    "ts": "2026-03-17T15:56:00Z",
+    "version": "v1.31.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-19T13:40:00Z",
+    "version": "v3.7.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.10.1",
+    "service": "orders-service",
+    "ts": "2026-03-19T17:40:00Z",
+    "version": "v2.11.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set PROVIDER_MAX_RETRIES=5 (was 2)",
+    "previous_version": "cfg-0388",
+    "service": "payments-service",
+    "ts": "2026-03-21T10:18:15Z",
+    "version": "cfg-0389"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0147",
+    "service": "orders-service",
+    "ts": "2026-03-21T11:09:00Z",
+    "version": "cfg-0148"
+  }
+]

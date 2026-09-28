@@ -1,0 +1,128 @@
+[
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.30.1",
+    "service": "api-gateway",
+    "ts": "2026-03-08T09:48:00Z",
+    "version": "v1.30.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.24.3",
+    "service": "ledger-service",
+    "ts": "2026-03-08T13:58:00Z",
+    "version": "v1.24.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.6.2",
+    "service": "payments-service",
+    "ts": "2026-03-09T20:43:00Z",
+    "version": "v3.6.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.4",
+    "service": "ledger-service",
+    "ts": "2026-03-10T14:29:00Z",
+    "version": "v1.24.5"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0236",
+    "service": "orders-service",
+    "ts": "2026-03-10T20:00:00Z",
+    "version": "cfg-0237"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.30.2",
+    "service": "api-gateway",
+    "ts": "2026-03-11T09:28:00Z",
+    "version": "v1.30.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.30.3",
+    "service": "api-gateway",
+    "ts": "2026-03-12T10:10:00Z",
+    "version": "v1.30.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0310",
+    "service": "api-gateway",
+    "ts": "2026-03-12T13:33:00Z",
+    "version": "cfg-0311"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-14T11:09:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.5",
+    "service": "ledger-service",
+    "ts": "2026-03-14T15:51:00Z",
+    "version": "v1.24.6"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.24.6",
+    "service": "ledger-service",
+    "ts": "2026-03-14T16:13:00Z",
+    "version": "v1.24.7"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0348",
+    "service": "payments-service",
+    "ts": "2026-03-14T17:14:00Z",
+    "version": "cfg-0349"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.24.7",
+    "service": "ledger-service",
+    "ts": "2026-03-15T13:03:51Z",
+    "version": "v1.24.8"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Support multi-currency pricing payloads",
+    "previous_version": "v2.14.2",
+    "service": "orders-service",
+    "ts": "2026-03-15T13:09:39Z",
+    "version": "v2.14.3"
+  }
+]

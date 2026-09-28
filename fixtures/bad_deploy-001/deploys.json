@@ -1,0 +1,92 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.28.3",
+    "service": "api-gateway",
+    "ts": "2026-03-05T13:30:00Z",
+    "version": "v1.29.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.0",
+    "service": "api-gateway",
+    "ts": "2026-03-07T09:29:00Z",
+    "version": "v1.29.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.29.1",
+    "service": "api-gateway",
+    "ts": "2026-03-07T11:25:00Z",
+    "version": "v1.29.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-07T13:21:00Z",
+    "version": "v3.9.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.21.3",
+    "service": "ledger-service",
+    "ts": "2026-03-07T17:04:00Z",
+    "version": "v1.22.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.22.0",
+    "service": "ledger-service",
+    "ts": "2026-03-08T10:31:00Z",
+    "version": "v1.22.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-03-08T14:03:00Z",
+    "version": "v1.22.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.2",
+    "service": "ledger-service",
+    "ts": "2026-03-09T13:16:00Z",
+    "version": "v1.22.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0270",
+    "service": "payments-service",
+    "ts": "2026-03-10T17:39:00Z",
+    "version": "cfg-0271"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Apply geo risk rules to the 3DS2 challenge flow",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-12T13:56:59Z",
+    "version": "v3.9.2"
+  }
+]

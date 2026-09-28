@@ -1,0 +1,101 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0386",
+    "service": "ledger-service",
+    "ts": "2026-03-13T17:37:00Z",
+    "version": "cfg-0387"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.15.0",
+    "service": "orders-service",
+    "ts": "2026-03-13T17:47:00Z",
+    "version": "v2.15.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.0",
+    "service": "api-gateway",
+    "ts": "2026-03-14T15:54:00Z",
+    "version": "v1.33.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.8.3",
+    "service": "payments-service",
+    "ts": "2026-03-15T16:17:00Z",
+    "version": "v3.8.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0188",
+    "service": "api-gateway",
+    "ts": "2026-03-18T09:23:00Z",
+    "version": "cfg-0189"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.33.1",
+    "service": "api-gateway",
+    "ts": "2026-03-18T09:46:00Z",
+    "version": "v1.34.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.15.1",
+    "service": "orders-service",
+    "ts": "2026-03-18T09:55:00Z",
+    "version": "v2.16.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.0",
+    "service": "orders-service",
+    "ts": "2026-03-19T10:23:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.17.0",
+    "service": "orders-service",
+    "ts": "2026-03-19T10:49:00Z",
+    "version": "v2.17.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.8.4",
+    "service": "payments-service",
+    "ts": "2026-03-19T16:00:00Z",
+    "version": "v3.9.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Move order CSV export to a background worker",
+    "previous_version": "v2.17.1",
+    "service": "orders-service",
+    "ts": "2026-03-20T11:37:30Z",
+    "version": "v2.17.2"
+  }
+]

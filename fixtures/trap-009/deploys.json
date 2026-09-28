@@ -1,0 +1,92 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0153",
+    "service": "payments-service",
+    "ts": "2026-02-28T13:33:00Z",
+    "version": "cfg-0154"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-02T20:53:00Z",
+    "version": "v3.9.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.1",
+    "service": "api-gateway",
+    "ts": "2026-03-03T09:59:00Z",
+    "version": "v1.33.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-03T10:52:00Z",
+    "version": "v3.9.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0125",
+    "service": "orders-service",
+    "ts": "2026-03-03T13:03:00Z",
+    "version": "cfg-0126"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-03-03T20:01:00Z",
+    "version": "v3.9.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.3",
+    "service": "payments-service",
+    "ts": "2026-03-05T16:54:00Z",
+    "version": "v3.9.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0154",
+    "service": "payments-service",
+    "ts": "2026-03-06T10:04:00Z",
+    "version": "cfg-0155"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0104",
+    "service": "ledger-service",
+    "ts": "2026-03-07T09:59:00Z",
+    "version": "cfg-0105"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0241",
+    "service": "api-gateway",
+    "ts": "2026-03-07T14:56:46Z",
+    "version": "cfg-0242"
+  }
+]

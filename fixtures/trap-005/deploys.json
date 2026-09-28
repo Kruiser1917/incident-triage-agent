@@ -1,0 +1,119 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0204",
+    "service": "payments-service",
+    "ts": "2026-03-03T11:28:00Z",
+    "version": "cfg-0205"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.34.3",
+    "service": "api-gateway",
+    "ts": "2026-03-04T14:12:00Z",
+    "version": "v1.34.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.5.1",
+    "service": "payments-service",
+    "ts": "2026-03-05T16:52:00Z",
+    "version": "v3.5.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.15.0",
+    "service": "orders-service",
+    "ts": "2026-03-06T11:37:00Z",
+    "version": "v2.16.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.3",
+    "service": "ledger-service",
+    "ts": "2026-03-06T14:58:00Z",
+    "version": "v1.24.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0266",
+    "service": "api-gateway",
+    "ts": "2026-03-07T16:08:00Z",
+    "version": "cfg-0267"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.4",
+    "service": "ledger-service",
+    "ts": "2026-03-08T17:51:00Z",
+    "version": "v1.24.5"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.16.0",
+    "service": "orders-service",
+    "ts": "2026-03-08T17:52:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.24.5",
+    "service": "ledger-service",
+    "ts": "2026-03-09T11:18:00Z",
+    "version": "v1.24.6"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.17.0",
+    "service": "orders-service",
+    "ts": "2026-03-09T20:56:00Z",
+    "version": "v2.17.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.17.1",
+    "service": "orders-service",
+    "ts": "2026-03-09T20:59:00Z",
+    "version": "v2.17.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0205",
+    "service": "payments-service",
+    "ts": "2026-03-10T10:43:00Z",
+    "version": "cfg-0206"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.17.2",
+    "service": "orders-service",
+    "ts": "2026-03-10T13:14:02Z",
+    "version": "v2.17.3"
+  }
+]

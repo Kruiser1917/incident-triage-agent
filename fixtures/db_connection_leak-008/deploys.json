@@ -1,0 +1,83 @@
+[
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.21.0",
+    "service": "ledger-service",
+    "ts": "2026-03-13T10:52:00Z",
+    "version": "v1.21.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.0",
+    "service": "api-gateway",
+    "ts": "2026-03-14T20:44:00Z",
+    "version": "v1.33.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0371",
+    "service": "ledger-service",
+    "ts": "2026-03-15T11:31:00Z",
+    "version": "cfg-0372"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.21.1",
+    "service": "ledger-service",
+    "ts": "2026-03-17T14:38:00Z",
+    "version": "v1.21.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.0",
+    "service": "api-gateway",
+    "ts": "2026-03-18T13:47:00Z",
+    "version": "v1.33.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0305",
+    "service": "payments-service",
+    "ts": "2026-03-19T09:17:00Z",
+    "version": "cfg-0306"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.21.2",
+    "service": "ledger-service",
+    "ts": "2026-03-19T20:39:00Z",
+    "version": "v1.21.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.15.3",
+    "service": "orders-service",
+    "ts": "2026-03-20T09:01:00Z",
+    "version": "v2.15.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Stream account statements directly from the database",
+    "previous_version": "v1.21.3",
+    "service": "ledger-service",
+    "ts": "2026-03-20T10:37:00Z",
+    "version": "v1.21.4"
+  }
+]

@@ -1,0 +1,101 @@
+[
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.11.2",
+    "service": "orders-service",
+    "ts": "2026-03-20T16:01:00Z",
+    "version": "v2.11.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.5.3",
+    "service": "payments-service",
+    "ts": "2026-03-21T13:51:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.6.0",
+    "service": "payments-service",
+    "ts": "2026-03-21T20:19:00Z",
+    "version": "v3.6.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0106",
+    "service": "api-gateway",
+    "ts": "2026-03-23T11:15:00Z",
+    "version": "cfg-0107"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.2",
+    "service": "ledger-service",
+    "ts": "2026-03-23T15:08:00Z",
+    "version": "v1.22.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.28.2",
+    "service": "api-gateway",
+    "ts": "2026-03-23T17:00:00Z",
+    "version": "v1.28.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.1",
+    "service": "payments-service",
+    "ts": "2026-03-24T17:26:00Z",
+    "version": "v3.6.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0256",
+    "service": "orders-service",
+    "ts": "2026-03-26T09:01:00Z",
+    "version": "cfg-0257"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.6.2",
+    "service": "payments-service",
+    "ts": "2026-03-26T20:25:00Z",
+    "version": "v3.6.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-27T09:05:00Z",
+    "version": "v3.6.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0253",
+    "service": "ledger-service",
+    "ts": "2026-03-27T15:24:27Z",
+    "version": "cfg-0254"
+  }
+]

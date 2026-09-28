@@ -1,0 +1,137 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.12.2",
+    "service": "orders-service",
+    "ts": "2026-03-21T13:37:00Z",
+    "version": "v2.12.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0222",
+    "service": "ledger-service",
+    "ts": "2026-03-22T15:22:00Z",
+    "version": "cfg-0223"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0265",
+    "service": "payments-service",
+    "ts": "2026-03-22T17:16:00Z",
+    "version": "cfg-0266"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.33.1",
+    "service": "api-gateway",
+    "ts": "2026-03-22T17:43:00Z",
+    "version": "v1.33.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.5.0",
+    "service": "payments-service",
+    "ts": "2026-03-23T14:44:00Z",
+    "version": "v3.5.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.2",
+    "service": "api-gateway",
+    "ts": "2026-03-24T11:31:00Z",
+    "version": "v1.34.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.20.2",
+    "service": "ledger-service",
+    "ts": "2026-03-24T20:56:00Z",
+    "version": "v1.21.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.34.0",
+    "service": "api-gateway",
+    "ts": "2026-03-25T13:17:00Z",
+    "version": "v1.34.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.5.1",
+    "service": "payments-service",
+    "ts": "2026-03-25T20:22:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.21.0",
+    "service": "ledger-service",
+    "ts": "2026-03-26T09:38:00Z",
+    "version": "v1.22.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.0",
+    "service": "ledger-service",
+    "ts": "2026-03-26T11:03:00Z",
+    "version": "v1.22.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.34.1",
+    "service": "api-gateway",
+    "ts": "2026-03-27T13:25:00Z",
+    "version": "v1.34.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0266",
+    "service": "payments-service",
+    "ts": "2026-03-27T14:46:00Z",
+    "version": "cfg-0267"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0190",
+    "service": "orders-service",
+    "ts": "2026-03-28T18:25:12Z",
+    "version": "cfg-0191"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set PAYMENTS_ROUTE_TIMEOUT=150ms (was 15s)",
+    "previous_version": "cfg-0357",
+    "service": "api-gateway",
+    "ts": "2026-03-28T18:31:05Z",
+    "version": "cfg-0358"
+  }
+]

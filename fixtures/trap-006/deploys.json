@@ -1,0 +1,83 @@
+[
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.29.2",
+    "service": "api-gateway",
+    "ts": "2026-03-18T20:18:00Z",
+    "version": "v1.29.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0335",
+    "service": "payments-service",
+    "ts": "2026-03-19T10:29:00Z",
+    "version": "cfg-0336"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.14.1",
+    "service": "orders-service",
+    "ts": "2026-03-20T17:22:00Z",
+    "version": "v2.14.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.29.3",
+    "service": "api-gateway",
+    "ts": "2026-03-21T17:26:00Z",
+    "version": "v1.29.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-03-22T15:09:00Z",
+    "version": "v1.23.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.23.0",
+    "service": "ledger-service",
+    "ts": "2026-03-23T10:07:00Z",
+    "version": "v1.23.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.23.1",
+    "service": "ledger-service",
+    "ts": "2026-03-24T09:46:00Z",
+    "version": "v1.23.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.0",
+    "service": "payments-service",
+    "ts": "2026-03-24T14:33:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0391",
+    "service": "ledger-service",
+    "ts": "2026-03-25T16:02:00Z",
+    "version": "cfg-0392"
+  }
+]

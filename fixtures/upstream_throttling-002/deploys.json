@@ -1,0 +1,74 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.3",
+    "service": "api-gateway",
+    "ts": "2026-03-14T16:27:00Z",
+    "version": "v1.32.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.32.4",
+    "service": "api-gateway",
+    "ts": "2026-03-15T09:12:00Z",
+    "version": "v1.32.5"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.21.2",
+    "service": "ledger-service",
+    "ts": "2026-03-16T13:18:00Z",
+    "version": "v1.21.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0344",
+    "service": "ledger-service",
+    "ts": "2026-03-16T15:59:00Z",
+    "version": "cfg-0345"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.32.5",
+    "service": "api-gateway",
+    "ts": "2026-03-17T11:21:00Z",
+    "version": "v1.32.6"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.15.2",
+    "service": "orders-service",
+    "ts": "2026-03-19T13:53:00Z",
+    "version": "v2.15.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.7.3",
+    "service": "payments-service",
+    "ts": "2026-03-19T15:28:00Z",
+    "version": "v3.7.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.7.4",
+    "service": "payments-service",
+    "ts": "2026-03-20T14:16:00Z",
+    "version": "v3.8.0"
+  }
+]

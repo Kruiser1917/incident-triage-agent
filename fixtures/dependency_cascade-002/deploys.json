@@ -1,0 +1,101 @@
+[
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.29.3",
+    "service": "api-gateway",
+    "ts": "2026-03-11T13:26:00Z",
+    "version": "v1.29.4"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.14.0",
+    "service": "orders-service",
+    "ts": "2026-03-11T13:42:00Z",
+    "version": "v2.14.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.5.1",
+    "service": "payments-service",
+    "ts": "2026-03-12T09:36:00Z",
+    "version": "v3.5.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0377",
+    "service": "api-gateway",
+    "ts": "2026-03-12T14:20:00Z",
+    "version": "cfg-0378"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-03-13T11:08:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0134",
+    "service": "payments-service",
+    "ts": "2026-03-14T10:10:00Z",
+    "version": "cfg-0135"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0254",
+    "service": "orders-service",
+    "ts": "2026-03-14T10:55:00Z",
+    "version": "cfg-0255"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.14.1",
+    "service": "orders-service",
+    "ts": "2026-03-16T14:31:00Z",
+    "version": "v2.14.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0378",
+    "service": "api-gateway",
+    "ts": "2026-03-16T20:17:00Z",
+    "version": "cfg-0379"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set maxmemory-policy noeviction (was allkeys-lru)",
+    "previous_version": "cfg-0117",
+    "service": "redis",
+    "ts": "2026-03-17T04:37:00Z",
+    "version": "cfg-0118"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.6.0",
+    "service": "payments-service",
+    "ts": "2026-03-17T15:59:00Z",
+    "version": "v3.6.1"
+  }
+]

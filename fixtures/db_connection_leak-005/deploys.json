@@ -1,0 +1,74 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.8.0",
+    "service": "payments-service",
+    "ts": "2026-02-28T17:33:00Z",
+    "version": "v3.8.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.12.3",
+    "service": "orders-service",
+    "ts": "2026-02-28T20:17:00Z",
+    "version": "v2.13.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.13.0",
+    "service": "orders-service",
+    "ts": "2026-03-01T09:31:00Z",
+    "version": "v2.14.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0252",
+    "service": "api-gateway",
+    "ts": "2026-03-02T10:44:00Z",
+    "version": "cfg-0253"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.14.0",
+    "service": "orders-service",
+    "ts": "2026-03-02T14:29:00Z",
+    "version": "v2.14.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0253",
+    "service": "api-gateway",
+    "ts": "2026-03-06T14:21:00Z",
+    "version": "cfg-0254"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Stream account statements directly from the database",
+    "previous_version": "v1.21.3",
+    "service": "ledger-service",
+    "ts": "2026-03-07T08:01:30Z",
+    "version": "v1.21.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0254",
+    "service": "api-gateway",
+    "ts": "2026-03-07T12:59:06Z",
+    "version": "cfg-0255"
+  }
+]

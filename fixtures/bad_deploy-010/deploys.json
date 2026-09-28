@@ -1,0 +1,110 @@
+[
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.6.1",
+    "service": "payments-service",
+    "ts": "2026-03-01T11:45:00Z",
+    "version": "v3.6.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.28.3",
+    "service": "api-gateway",
+    "ts": "2026-03-01T17:03:00Z",
+    "version": "v1.29.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.6.2",
+    "service": "payments-service",
+    "ts": "2026-03-01T20:12:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-03T14:40:00Z",
+    "version": "v3.7.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.29.0",
+    "service": "api-gateway",
+    "ts": "2026-03-03T17:15:00Z",
+    "version": "v1.29.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0156",
+    "service": "api-gateway",
+    "ts": "2026-03-04T20:07:00Z",
+    "version": "cfg-0157"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.20.2",
+    "service": "ledger-service",
+    "ts": "2026-03-05T15:49:00Z",
+    "version": "v1.21.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.11.1",
+    "service": "orders-service",
+    "ts": "2026-03-05T20:41:00Z",
+    "version": "v2.11.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.11.2",
+    "service": "orders-service",
+    "ts": "2026-03-06T20:52:00Z",
+    "version": "v2.11.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.29.1",
+    "service": "api-gateway",
+    "ts": "2026-03-08T09:10:00Z",
+    "version": "v1.29.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.29.2",
+    "service": "api-gateway",
+    "ts": "2026-03-08T19:57:14Z",
+    "version": "v1.30.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor entry posting to support reversals",
+    "previous_version": "v1.21.0",
+    "service": "ledger-service",
+    "ts": "2026-03-08T20:01:57Z",
+    "version": "v1.21.1"
+  }
+]

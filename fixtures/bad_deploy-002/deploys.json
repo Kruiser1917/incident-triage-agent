@@ -1,0 +1,101 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.13.1",
+    "service": "orders-service",
+    "ts": "2026-03-01T09:16:00Z",
+    "version": "v2.13.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-02T11:41:00Z",
+    "version": "v3.9.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.2",
+    "service": "ledger-service",
+    "ts": "2026-03-02T13:47:00Z",
+    "version": "v1.19.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-03-02T14:26:00Z",
+    "version": "v3.9.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.13.2",
+    "service": "orders-service",
+    "ts": "2026-03-02T16:52:00Z",
+    "version": "v2.13.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0202",
+    "service": "orders-service",
+    "ts": "2026-03-03T16:20:00Z",
+    "version": "cfg-0203"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.9.3",
+    "service": "payments-service",
+    "ts": "2026-03-04T20:04:00Z",
+    "version": "v3.9.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.3",
+    "service": "ledger-service",
+    "ts": "2026-03-05T09:49:00Z",
+    "version": "v1.19.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.4",
+    "service": "payments-service",
+    "ts": "2026-03-05T14:02:00Z",
+    "version": "v3.9.5"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0365",
+    "service": "payments-service",
+    "ts": "2026-03-05T14:40:00Z",
+    "version": "cfg-0366"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Support multi-currency pricing payloads",
+    "previous_version": "v2.13.3",
+    "service": "orders-service",
+    "ts": "2026-03-08T11:00:03Z",
+    "version": "v2.13.4"
+  }
+]

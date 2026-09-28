@@ -1,0 +1,128 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.19.3",
+    "service": "ledger-service",
+    "ts": "2026-03-17T10:17:00Z",
+    "version": "v1.19.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.19.4",
+    "service": "ledger-service",
+    "ts": "2026-03-17T11:25:00Z",
+    "version": "v1.19.5"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0340",
+    "service": "orders-service",
+    "ts": "2026-03-17T13:24:00Z",
+    "version": "cfg-0341"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0241",
+    "service": "ledger-service",
+    "ts": "2026-03-18T09:18:00Z",
+    "version": "cfg-0242"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.5",
+    "service": "ledger-service",
+    "ts": "2026-03-18T14:26:00Z",
+    "version": "v1.19.6"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.0",
+    "service": "orders-service",
+    "ts": "2026-03-19T20:30:00Z",
+    "version": "v2.16.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.31.1",
+    "service": "api-gateway",
+    "ts": "2026-03-20T10:25:00Z",
+    "version": "v1.31.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0242",
+    "service": "ledger-service",
+    "ts": "2026-03-22T11:38:00Z",
+    "version": "cfg-0243"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.31.2",
+    "service": "api-gateway",
+    "ts": "2026-03-22T16:54:00Z",
+    "version": "v1.31.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0278",
+    "service": "payments-service",
+    "ts": "2026-03-23T16:11:00Z",
+    "version": "cfg-0279"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.16.1",
+    "service": "orders-service",
+    "ts": "2026-03-23T17:39:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.31.3",
+    "service": "api-gateway",
+    "ts": "2026-03-23T20:12:00Z",
+    "version": "v1.31.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Move order CSV export to a background worker",
+    "previous_version": "v2.17.0",
+    "service": "orders-service",
+    "ts": "2026-03-24T05:55:30Z",
+    "version": "v2.18.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0341",
+    "service": "orders-service",
+    "ts": "2026-03-24T15:12:02Z",
+    "version": "cfg-0342"
+  }
+]

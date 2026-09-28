@@ -1,0 +1,101 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.12.2",
+    "service": "orders-service",
+    "ts": "2026-03-13T10:30:00Z",
+    "version": "v2.12.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0281",
+    "service": "api-gateway",
+    "ts": "2026-03-13T11:33:00Z",
+    "version": "cfg-0282"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0308",
+    "service": "orders-service",
+    "ts": "2026-03-14T13:09:00Z",
+    "version": "cfg-0309"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.12.3",
+    "service": "orders-service",
+    "ts": "2026-03-14T14:56:00Z",
+    "version": "v2.12.4"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-03-14T17:13:00Z",
+    "version": "v3.5.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0278",
+    "service": "payments-service",
+    "ts": "2026-03-16T11:18:00Z",
+    "version": "cfg-0279"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.3",
+    "service": "payments-service",
+    "ts": "2026-03-16T15:28:00Z",
+    "version": "v3.5.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.4",
+    "service": "payments-service",
+    "ts": "2026-03-16T20:19:00Z",
+    "version": "v3.5.5"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.5",
+    "service": "payments-service",
+    "ts": "2026-03-18T09:20:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.6.0",
+    "service": "payments-service",
+    "ts": "2026-03-18T20:47:00Z",
+    "version": "v3.6.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.34.0",
+    "service": "api-gateway",
+    "ts": "2026-03-19T09:40:00Z",
+    "version": "v1.34.1"
+  }
+]

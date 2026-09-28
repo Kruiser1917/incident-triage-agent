@@ -1,0 +1,44 @@
+{
+  "alerts": [
+    {
+      "annotations": {
+        "description": "orders-service 5xx ratio is 26.8% (threshold 5%).",
+        "runbook_url": "https://runbooks.internal/alerts/HighErrorRate",
+        "summary": "5xx ratio > 5% for 2m"
+      },
+      "endsAt": "0001-01-01T00:00:00Z",
+      "fingerprint": "dc15214cf8ab7c3c",
+      "generatorURL": "http://prometheus.prod.internal:9090/graph?g0.expr=sum%28rate%28http_requests_total%7Bservice%3D%22orders-service%22%2Ccode%3D~%225..%22%7D%5B2m%5D%29%29%20/%20sum%28rate%28http_requests_total%7Bservice%3D%22orders-service%22%7D%5B2m%5D%29%29%20%3E%200.05",
+      "labels": {
+        "alertname": "HighErrorRate",
+        "namespace": "prod",
+        "service": "orders-service",
+        "severity": "critical",
+        "team": "orders-team"
+      },
+      "startsAt": "2026-03-24T15:25:30Z",
+      "status": "firing"
+    }
+  ],
+  "commonAnnotations": {
+    "description": "orders-service 5xx ratio is 26.8% (threshold 5%).",
+    "runbook_url": "https://runbooks.internal/alerts/HighErrorRate",
+    "summary": "5xx ratio > 5% for 2m"
+  },
+  "commonLabels": {
+    "alertname": "HighErrorRate",
+    "namespace": "prod",
+    "service": "orders-service",
+    "severity": "critical",
+    "team": "orders-team"
+  },
+  "externalURL": "http://alertmanager.prod.internal:9093",
+  "groupKey": "{}:{alertname=\"HighErrorRate\"}",
+  "groupLabels": {
+    "alertname": "HighErrorRate"
+  },
+  "receiver": "triage-agent",
+  "status": "firing",
+  "truncatedAlerts": 0,
+  "version": "4"
+}

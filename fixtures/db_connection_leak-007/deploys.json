@@ -1,0 +1,101 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.22.0",
+    "service": "ledger-service",
+    "ts": "2026-02-25T09:37:00Z",
+    "version": "v1.23.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0170",
+    "service": "payments-service",
+    "ts": "2026-02-26T09:07:00Z",
+    "version": "cfg-0171"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.23.0",
+    "service": "ledger-service",
+    "ts": "2026-02-26T20:11:00Z",
+    "version": "v1.23.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.8.1",
+    "service": "payments-service",
+    "ts": "2026-02-27T13:24:00Z",
+    "version": "v3.8.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-02-27T15:35:00Z",
+    "version": "v3.8.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0397",
+    "service": "ledger-service",
+    "ts": "2026-02-27T20:58:00Z",
+    "version": "cfg-0398"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.3",
+    "service": "payments-service",
+    "ts": "2026-03-01T09:24:00Z",
+    "version": "v3.8.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.8.4",
+    "service": "payments-service",
+    "ts": "2026-03-01T13:59:00Z",
+    "version": "v3.8.5"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.16.0",
+    "service": "orders-service",
+    "ts": "2026-03-01T14:02:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.32.3",
+    "service": "api-gateway",
+    "ts": "2026-03-03T09:38:00Z",
+    "version": "v1.32.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Move order CSV export to a background worker",
+    "previous_version": "v2.17.0",
+    "service": "orders-service",
+    "ts": "2026-03-03T09:50:45Z",
+    "version": "v2.17.1"
+  }
+]

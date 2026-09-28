@@ -1,0 +1,83 @@
+[
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.11.3",
+    "service": "orders-service",
+    "ts": "2026-03-14T14:36:00Z",
+    "version": "v2.11.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.11.4",
+    "service": "orders-service",
+    "ts": "2026-03-14T17:09:00Z",
+    "version": "v2.11.5"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.11.5",
+    "service": "orders-service",
+    "ts": "2026-03-14T17:12:00Z",
+    "version": "v2.11.6"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0102",
+    "service": "api-gateway",
+    "ts": "2026-03-15T11:58:00Z",
+    "version": "cfg-0103"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0103",
+    "service": "api-gateway",
+    "ts": "2026-03-16T15:27:00Z",
+    "version": "cfg-0104"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.22.2",
+    "service": "ledger-service",
+    "ts": "2026-03-18T16:08:00Z",
+    "version": "v1.23.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.11.6",
+    "service": "orders-service",
+    "ts": "2026-03-20T13:44:00Z",
+    "version": "v2.11.7"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0170",
+    "service": "orders-service",
+    "ts": "2026-03-20T17:46:00Z",
+    "version": "cfg-0171"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0144",
+    "service": "ledger-service",
+    "ts": "2026-03-21T18:59:37Z",
+    "version": "cfg-0145"
+  }
+]

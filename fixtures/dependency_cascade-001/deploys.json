@@ -1,0 +1,137 @@
+[
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.23.2",
+    "service": "ledger-service",
+    "ts": "2026-03-08T09:16:00Z",
+    "version": "v1.23.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.31.3",
+    "service": "api-gateway",
+    "ts": "2026-03-09T13:38:00Z",
+    "version": "v1.32.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.0",
+    "service": "api-gateway",
+    "ts": "2026-03-09T20:21:00Z",
+    "version": "v1.32.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.1",
+    "service": "payments-service",
+    "ts": "2026-03-10T14:50:00Z",
+    "version": "v3.8.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0390",
+    "service": "orders-service",
+    "ts": "2026-03-10T15:09:00Z",
+    "version": "cfg-0391"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-03-10T16:32:00Z",
+    "version": "v3.9.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.32.1",
+    "service": "api-gateway",
+    "ts": "2026-03-10T16:55:00Z",
+    "version": "v1.32.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.2",
+    "service": "api-gateway",
+    "ts": "2026-03-11T09:28:00Z",
+    "version": "v1.33.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0391",
+    "service": "orders-service",
+    "ts": "2026-03-11T09:30:00Z",
+    "version": "cfg-0392"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-11T15:01:00Z",
+    "version": "v3.10.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.0",
+    "service": "api-gateway",
+    "ts": "2026-03-11T16:16:00Z",
+    "version": "v1.33.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.11.1",
+    "service": "orders-service",
+    "ts": "2026-03-12T16:46:00Z",
+    "version": "v2.11.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.23.3",
+    "service": "ledger-service",
+    "ts": "2026-03-12T20:32:00Z",
+    "version": "v1.23.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.11.2",
+    "service": "orders-service",
+    "ts": "2026-03-13T20:40:00Z",
+    "version": "v2.11.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Recalculate running balance on every entry post",
+    "previous_version": "v1.23.4",
+    "service": "ledger-service",
+    "ts": "2026-03-14T14:44:15Z",
+    "version": "v1.23.5"
+  }
+]
