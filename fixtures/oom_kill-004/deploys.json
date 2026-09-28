@@ -1,0 +1,74 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.3",
+    "service": "orders-service",
+    "ts": "2026-03-22T15:52:00Z",
+    "version": "v2.16.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-03-22T20:03:00Z",
+    "version": "v1.22.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.33.3",
+    "service": "api-gateway",
+    "ts": "2026-03-23T16:20:00Z",
+    "version": "v1.33.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.33.4",
+    "service": "api-gateway",
+    "ts": "2026-03-25T20:19:00Z",
+    "version": "v1.33.5"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.4",
+    "service": "orders-service",
+    "ts": "2026-03-26T20:59:00Z",
+    "version": "v2.16.5"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.16.5",
+    "service": "orders-service",
+    "ts": "2026-03-27T15:55:00Z",
+    "version": "v2.16.6"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.16.6",
+    "service": "orders-service",
+    "ts": "2026-03-28T11:40:00Z",
+    "version": "v2.16.7"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.7",
+    "service": "orders-service",
+    "ts": "2026-03-29T13:53:00Z",
+    "version": "v2.17.0"
+  }
+]

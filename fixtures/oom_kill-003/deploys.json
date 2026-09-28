@@ -1,0 +1,110 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.12.2",
+    "service": "orders-service",
+    "ts": "2026-03-12T17:05:00Z",
+    "version": "v2.12.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.12.3",
+    "service": "orders-service",
+    "ts": "2026-03-13T09:59:00Z",
+    "version": "v2.12.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-14T10:25:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.23.0",
+    "service": "ledger-service",
+    "ts": "2026-03-14T11:52:00Z",
+    "version": "v1.23.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-15T11:28:00Z",
+    "version": "v3.7.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.12.4",
+    "service": "orders-service",
+    "ts": "2026-03-16T13:06:00Z",
+    "version": "v2.12.5"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.23.1",
+    "service": "ledger-service",
+    "ts": "2026-03-16T20:56:00Z",
+    "version": "v1.24.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.24.0",
+    "service": "ledger-service",
+    "ts": "2026-03-17T13:47:00Z",
+    "version": "v1.24.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.12.5",
+    "service": "orders-service",
+    "ts": "2026-03-17T20:18:00Z",
+    "version": "v2.12.6"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0184",
+    "service": "orders-service",
+    "ts": "2026-03-18T09:20:00Z",
+    "version": "cfg-0185"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0108",
+    "service": "payments-service",
+    "ts": "2026-03-18T14:58:00Z",
+    "version": "cfg-0109"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add in-memory balance snapshot cache",
+    "previous_version": "v1.24.1",
+    "service": "ledger-service",
+    "ts": "2026-03-19T13:40:00Z",
+    "version": "v1.24.2"
+  }
+]

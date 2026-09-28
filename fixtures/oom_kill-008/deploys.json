@@ -1,0 +1,128 @@
+[
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.13.1",
+    "service": "orders-service",
+    "ts": "2026-03-01T10:14:00Z",
+    "version": "v2.14.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.14.0",
+    "service": "orders-service",
+    "ts": "2026-03-01T15:48:00Z",
+    "version": "v2.15.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.19.1",
+    "service": "ledger-service",
+    "ts": "2026-03-02T13:53:00Z",
+    "version": "v1.19.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.7.2",
+    "service": "payments-service",
+    "ts": "2026-03-02T16:33:00Z",
+    "version": "v3.7.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.2",
+    "service": "ledger-service",
+    "ts": "2026-03-02T17:24:00Z",
+    "version": "v1.19.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0165",
+    "service": "api-gateway",
+    "ts": "2026-03-03T09:12:00Z",
+    "version": "cfg-0166"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.15.0",
+    "service": "orders-service",
+    "ts": "2026-03-03T17:57:00Z",
+    "version": "v2.15.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0308",
+    "service": "payments-service",
+    "ts": "2026-03-05T17:13:00Z",
+    "version": "cfg-0309"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.7.3",
+    "service": "payments-service",
+    "ts": "2026-03-06T10:21:00Z",
+    "version": "v3.7.4"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.30.3",
+    "service": "api-gateway",
+    "ts": "2026-03-06T20:46:00Z",
+    "version": "v1.30.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.7.4",
+    "service": "payments-service",
+    "ts": "2026-03-07T11:42:00Z",
+    "version": "v3.8.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.15.1",
+    "service": "orders-service",
+    "ts": "2026-03-07T17:25:00Z",
+    "version": "v2.15.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Buffer full request bodies for audit logging",
+    "previous_version": "v1.30.4",
+    "service": "api-gateway",
+    "ts": "2026-03-08T13:51:15Z",
+    "version": "v1.31.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.15.2",
+    "service": "orders-service",
+    "ts": "2026-03-08T17:49:07Z",
+    "version": "v2.15.3"
+  }
+]

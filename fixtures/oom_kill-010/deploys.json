@@ -1,0 +1,146 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.28.2",
+    "service": "api-gateway",
+    "ts": "2026-03-19T10:18:00Z",
+    "version": "v1.29.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.29.0",
+    "service": "api-gateway",
+    "ts": "2026-03-19T14:53:00Z",
+    "version": "v1.29.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.1",
+    "service": "ledger-service",
+    "ts": "2026-03-19T17:35:00Z",
+    "version": "v1.24.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.24.2",
+    "service": "ledger-service",
+    "ts": "2026-03-20T14:09:00Z",
+    "version": "v1.25.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.1",
+    "service": "api-gateway",
+    "ts": "2026-03-20T16:01:00Z",
+    "version": "v1.29.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.25.0",
+    "service": "ledger-service",
+    "ts": "2026-03-20T17:32:00Z",
+    "version": "v1.25.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.25.1",
+    "service": "ledger-service",
+    "ts": "2026-03-21T17:02:00Z",
+    "version": "v1.25.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.2",
+    "service": "api-gateway",
+    "ts": "2026-03-22T10:45:00Z",
+    "version": "v1.29.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.3",
+    "service": "api-gateway",
+    "ts": "2026-03-22T11:51:00Z",
+    "version": "v1.30.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.13.3",
+    "service": "orders-service",
+    "ts": "2026-03-22T14:43:00Z",
+    "version": "v2.13.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.25.2",
+    "service": "ledger-service",
+    "ts": "2026-03-22T15:19:00Z",
+    "version": "v1.26.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.30.0",
+    "service": "api-gateway",
+    "ts": "2026-03-23T11:52:00Z",
+    "version": "v1.31.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.26.0",
+    "service": "ledger-service",
+    "ts": "2026-03-24T13:37:00Z",
+    "version": "v1.27.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.31.0",
+    "service": "api-gateway",
+    "ts": "2026-03-24T17:23:00Z",
+    "version": "v1.32.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Cache merchant risk profiles in memory to cut scoring latency",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-25T11:43:45Z",
+    "version": "v3.9.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.27.0",
+    "service": "ledger-service",
+    "ts": "2026-03-25T15:44:37Z",
+    "version": "v1.27.1"
+  }
+]

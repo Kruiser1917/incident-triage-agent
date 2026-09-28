@@ -1,0 +1,119 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.21.1",
+    "service": "ledger-service",
+    "ts": "2026-02-25T16:31:00Z",
+    "version": "v1.21.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.29.1",
+    "service": "api-gateway",
+    "ts": "2026-02-25T17:53:00Z",
+    "version": "v1.29.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.21.2",
+    "service": "ledger-service",
+    "ts": "2026-02-26T13:03:00Z",
+    "version": "v1.21.3"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.21.3",
+    "service": "ledger-service",
+    "ts": "2026-02-26T15:19:00Z",
+    "version": "v1.22.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.2",
+    "service": "api-gateway",
+    "ts": "2026-02-27T15:00:00Z",
+    "version": "v1.29.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.22.0",
+    "service": "ledger-service",
+    "ts": "2026-02-28T11:50:00Z",
+    "version": "v1.22.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-02-28T13:06:00Z",
+    "version": "v3.9.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-02-28T15:42:00Z",
+    "version": "v1.22.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.9.3",
+    "service": "payments-service",
+    "ts": "2026-03-01T10:39:00Z",
+    "version": "v3.9.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.22.2",
+    "service": "ledger-service",
+    "ts": "2026-03-02T11:58:00Z",
+    "version": "v1.22.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.3",
+    "service": "api-gateway",
+    "ts": "2026-03-02T11:59:00Z",
+    "version": "v1.29.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.29.4",
+    "service": "api-gateway",
+    "ts": "2026-03-02T13:06:00Z",
+    "version": "v1.30.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Cache merchant risk profiles in memory to cut scoring latency",
+    "previous_version": "v3.9.4",
+    "service": "payments-service",
+    "ts": "2026-03-03T04:03:30Z",
+    "version": "v3.9.5"
+  }
+]

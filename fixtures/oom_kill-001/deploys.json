@@ -1,0 +1,110 @@
+[
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.29.2",
+    "service": "api-gateway",
+    "ts": "2026-03-16T13:18:00Z",
+    "version": "v1.29.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.3",
+    "service": "api-gateway",
+    "ts": "2026-03-17T10:42:00Z",
+    "version": "v1.30.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-17T14:48:00Z",
+    "version": "v3.9.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-03-18T09:53:00Z",
+    "version": "v3.10.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.0",
+    "service": "orders-service",
+    "ts": "2026-03-18T10:29:00Z",
+    "version": "v2.16.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.30.0",
+    "service": "api-gateway",
+    "ts": "2026-03-18T11:08:00Z",
+    "version": "v1.30.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0244",
+    "service": "api-gateway",
+    "ts": "2026-03-18T16:01:00Z",
+    "version": "cfg-0245"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0245",
+    "service": "api-gateway",
+    "ts": "2026-03-19T11:05:00Z",
+    "version": "cfg-0246"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0246",
+    "service": "api-gateway",
+    "ts": "2026-03-19T17:11:00Z",
+    "version": "cfg-0247"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.16.1",
+    "service": "orders-service",
+    "ts": "2026-03-20T17:06:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0337",
+    "service": "payments-service",
+    "ts": "2026-03-21T14:15:00Z",
+    "version": "cfg-0338"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Cache merchant risk profiles in memory to cut scoring latency",
+    "previous_version": "v3.10.0",
+    "service": "payments-service",
+    "ts": "2026-03-22T11:01:30Z",
+    "version": "v3.11.0"
+  }
+]
