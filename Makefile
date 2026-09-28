@@ -1,5 +1,5 @@
 .DEFAULT_GOAL := help
-.PHONY: help install up up-obs down test test-integration lint format evals
+.PHONY: help install up up-obs down test test-integration lint format evals dataset validate-dataset show-case
 
 help: ## Show available targets
 	@grep -E '^[a-zA-Z_-]+:.*?## ' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  %-18s %s\n", $$1, $$2}'
@@ -30,6 +30,15 @@ lint: ## Ruff lint + format check + mypy
 format: ## Auto-fix lint issues and format code
 	uv run ruff check --fix .
 	uv run ruff format .
+
+dataset: ## Regenerate fixtures and the golden set (deterministic)
+	uv run python -m triage.simulator generate
+
+validate-dataset: ## Check the golden set: schema, balance, solvability
+	uv run python -m triage.simulator validate
+
+show-case: ## Show one case for review: make show-case CASE=oom_kill-001 [ANSWER=1]
+	@uv run python -m triage.simulator show $(CASE) $(if $(ANSWER),--answer,)
 
 evals: ## Run evals (implemented in phase 7)
 	@echo "evals: not implemented yet (phase 7)" >&2; exit 1
