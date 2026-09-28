@@ -1,0 +1,73 @@
+# Simulated production topology of a fictional payments company.
+# Hand-written input for the simulator; the agent sees it through get_topology.
+# depends_on = services this one calls (downstream dependencies).
+
+services:
+  api-gateway:
+    kind: service
+    runtime: go
+    owner: platform-team
+    description: Public HTTPS entry point; routes /api/v1/orders and /api/v1/payments.
+    replicas: 3
+    depends_on: [orders-service, payments-service]
+    metrics: [cpu, memory, error_rate, latency_p95, disk_usage, rps]
+    memory_limit_mib: 512
+
+  orders-service:
+    kind: service
+    runtime: python
+    owner: orders-team
+    description: Order lifecycle (create, confirm, cancel); charges cards via payments-service.
+    replicas: 3
+    depends_on: [postgres, redis, payments-service]
+    metrics: [cpu, memory, error_rate, latency_p95, db_connections, disk_usage, rps]
+    memory_limit_mib: 1024
+    db_pool_max: 20
+
+  payments-service:
+    kind: service
+    runtime: java
+    owner: payments-team
+    description: Card payment authorization and capture; posts entries to ledger-service.
+    replicas: 3
+    depends_on: [ledger-service, redis, payment-provider-api]
+    metrics: [cpu, memory, error_rate, latency_p95, disk_usage, rps]
+    memory_limit_mib: 2048
+
+  ledger-service:
+    kind: service
+    runtime: go
+    owner: ledger-team
+    description: Double-entry ledger and account balances.
+    replicas: 2
+    depends_on: [postgres]
+    metrics: [cpu, memory, error_rate, latency_p95, db_connections, disk_usage, rps]
+    memory_limit_mib: 768
+    db_pool_max: 25
+
+  postgres:
+    kind: datastore
+    runtime: postgres
+    owner: platform-team
+    description: Primary PostgreSQL 16 instance hosting the orders and ledger databases.
+    replicas: 1
+    metrics: [cpu, memory, latency_p95, db_connections, disk_usage, rps]
+    memory_limit_mib: 8192
+    max_connections: 200
+
+  redis:
+    kind: datastore
+    runtime: redis
+    owner: platform-team
+    description: Shared cache and idempotency-key store.
+    replicas: 1
+    metrics: [cpu, memory, latency_p95, rps]
+    memory_limit_mib: 4096
+
+  payment-provider-api:
+    kind: external
+    runtime: external
+    owner: payments-team
+    description: Third-party card processor; metrics are observed at our egress proxy, no logs.
+    replicas: 1
+    metrics: [error_rate, latency_p95, rps]
