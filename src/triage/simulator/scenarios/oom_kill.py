@@ -16,6 +16,7 @@ from triage.simulator.builder import CaseBuilder
 from triage.simulator.clock import HOUR, MINUTE, relative
 from triage.simulator.rng import Rng
 from triage.simulator.scenarios.base import ScenarioResult, common_tags, degrade_observability
+from triage.simulator.scenarios.common import caller_error_line
 from triage.simulator.schemas import Action, Expected, ToolName
 from triage.simulator.spec import CaseSpec, RedHerring
 
@@ -122,10 +123,15 @@ def build(b: CaseBuilder, spec: CaseSpec) -> ScenarioResult:
     # 2. Memory model and kill schedule.
     base = limit * background.MEMORY_FRACTION[runtime] * rng.uniform(0.95, 1.05)
     peak = limit * rng.uniform(0.975, 0.99)
+    # A restart-count alert fires at the first kill cluster; with earlier kills it would have
+    # been firing for hours already. So those variants model the very first OOM.
+    first_oom = spec.alert == "PodRestartsHigh"
     if leak:
-        memory, resets = _leak_memory(b, rng, growth_start, anchor, base, peak)
+        memory, resets = _leak_memory(b, rng, growth_start, anchor, base, peak, first_oom)
     else:
-        memory, resets, growth_start = _cache_memory(b, rng, growth_start, anchor, base, peak)
+        memory, resets, growth_start = _cache_memory(
+            b, rng, growth_start, anchor, base, peak, first_oom
+        )
     clusters = tuple(_cluster(b, rng, service, ts) for ts in resets)
 
     # 3. Overlay signals.
@@ -192,11 +198,17 @@ def build(b: CaseBuilder, spec: CaseSpec) -> ScenarioResult:
 
 
 def _leak_memory(
-    b: CaseBuilder, rng: Rng, release: int, anchor: int, base: float, peak: float
+    b: CaseBuilder,
+    rng: Rng,
+    release: int,
+    anchor: int,
+    base: float,
+    peak: float,
+    first_oom: bool,
 ) -> tuple[dict[int, float], tuple[int, ...]]:
     """Constant-rate leak from the release; kills evenly spaced so one lands on ``anchor``."""
     target = rng.uniform(25, 45) if anchor - release <= 8 * HOUR else rng.uniform(80, 110)
-    cycles = max(1, round((anchor - release) / (target * MINUTE)))
+    cycles = 1 if first_oom else max(1, round((anchor - release) / (target * MINUTE)))
     period = (anchor - release) / cycles
     resets = []
     k = 1
@@ -213,7 +225,13 @@ def _leak_memory(
 
 
 def _cache_memory(
-    b: CaseBuilder, rng: Rng, growth_start: int, anchor: int, base: float, peak: float
+    b: CaseBuilder,
+    rng: Rng,
+    growth_start: int,
+    anchor: int,
+    base: float,
+    peak: float,
+    first_oom: bool,
 ) -> tuple[dict[int, float], tuple[int, ...], int]:
     """Growth proportional to traffic since ``growth_start``; kills found by integrating
     backwards from ``anchor`` so that one kill cluster lands right before the alert."""
@@ -221,15 +239,20 @@ def _cache_memory(
     rate = (peak - base) / cycle_min / background.traffic(anchor)  # MiB per minute at traffic 1
     resets = [anchor]
     acc, t = 0.0, anchor
-    while t - MINUTE > growth_start:
-        t -= MINUTE
-        acc += rate * background.traffic(t)
-        if acc >= peak - base:
-            resets.append(t)
-            acc = 0.0
-    while acc < 0.6 * (peak - base):  # start growth early enough that the cache begins small
-        t -= MINUTE
-        acc += rate * background.traffic(t)
+    if first_oom:  # the cache grew from (almost) empty to the limit exactly once
+        while acc < 0.97 * (peak - base):
+            t -= MINUTE
+            acc += rate * background.traffic(t)
+    else:
+        while t - MINUTE > growth_start:
+            t -= MINUTE
+            acc += rate * background.traffic(t)
+            if acc >= peak - base:
+                resets.append(t)
+                acc = 0.0
+        while acc < 0.6 * (peak - base):  # start growth early enough that the cache begins small
+            t -= MINUTE
+            acc += rate * background.traffic(t)
     growth_start = t
     level_at_start = peak - acc  # memory when growth began: cache already partly filled
     acc, t = 0.0, anchor
@@ -337,31 +360,9 @@ def _kill_logs(
             t += rng.randint(200, 3000)
         for caller in b.topology.dependents_of(service):
             for _ in range(rng.randint(1, 3)):
-                _caller_error(b, caller, service, ts * 1000 + rng.randint(0, 60000), rng)
-
-
-def _caller_error(b: CaseBuilder, caller: str, service: str, ts_ms: int, rng: Rng) -> None:
-    if caller == "api-gateway":
-        path = "/api/v1/payments" if service == "payments-service" else "/api/v1/orders"
-        msg = catalog.gateway_access(
-            rng, "POST", path, 503, service, rng.randint(1, 5),
-            'flags=UF err="upstream connect error or disconnect/reset before headers. '
-            'reset reason: connection failure"',
-        )  # fmt: skip
-    elif caller == "orders-service":
-        msg = (
-            "orders.clients.payments: POST http://payments-service:8080/v1/payments failed: "
-            "ConnectionError(\"HTTPConnectionPool(host='payments-service', port=8080): Max "
-            "retries exceeded with url: /v1/payments (Caused by NewConnectionError('Failed to "
-            "establish a new connection: [Errno 111] Connection refused'))\")"
-        )
-    else:
-        msg = (
-            f"c.a.p.ledger.LedgerClient : failed to post ledger entry paymentId="
-            f"{catalog.payment_id(rng)}: I/O error on POST request for "
-            f'"http://{service}:8080/v1/entries": Connection refused'
-        )
-    b.log(ts_ms, caller, "ERROR", msg)
+                ts_ms = ts * 1000 + rng.randint(0, 60000)
+                level, msg = caller_error_line(caller, service, "refused", rng)
+                b.log(ts_ms, caller, level, msg)
 
 
 def _restart_counts(clusters: tuple[KillCluster, ...], since: int) -> dict[tuple[str, int], int]:

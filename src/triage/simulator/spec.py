@@ -13,7 +13,7 @@ from typing import Literal
 from triage.simulator.schemas import Difficulty, IncidentClass, MetricName, Split
 
 NoiseLevel = Literal["low", "medium", "high"]
-AlertKind = Literal["HighErrorRate", "PodRestartsHigh", "HighLatencyP95"]
+AlertKind = Literal["HighErrorRate", "PodRestartsHigh", "HighLatencyP95", "DiskUsageHigh"]
 HerringKind = Literal[
     "recent_deploy", "same_service_config", "redis_latency_spike", "provider_429_burst"
 ]

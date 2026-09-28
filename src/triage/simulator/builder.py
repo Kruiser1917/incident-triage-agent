@@ -290,6 +290,10 @@ class CaseBuilder:
             pod = self._pick_rng.choice(self.pods_at(service, ts_ms // 1000))
         self.logs.append(LogRecord(ts_ms, len(self.logs), service, pod, level, source, msg))
 
+    def drop_logs(self, service: str) -> None:
+        """Remove every line of ``service`` (a broken log pipeline)."""
+        self.logs = [record for record in self.logs if record.service != service]
+
     # --- rendering -----------------------------------------------------------------------
 
     def render_logs(self) -> str:

@@ -34,11 +34,10 @@ def plan(b: CaseBuilder, herring: RedHerring, root_service: str) -> PlannedHerri
             handle = b.plan_deploy(ts, herring.service, "config", description)
         return PlannedHerring(herring, ts, deploy=handle)
     if herring.kind == "same_service_config":
+        target = herring.service or root_service
         ts = b.alert_ts - rng.randint(9, 14) * MINUTE - rng.randint(0, 59)
-        description = rng.choice(catalog.HARMLESS_CONFIG_CHANGES[root_service])
-        return PlannedHerring(
-            herring, ts, deploy=b.plan_deploy(ts, root_service, "config", description)
-        )
+        description = rng.choice(catalog.HARMLESS_CONFIG_CHANGES[target])
+        return PlannedHerring(herring, ts, deploy=b.plan_deploy(ts, target, "config", description))
     if herring.kind == "redis_latency_spike":
         ts = b.alert_ts - rng.randint(15, 35) * MINUTE
         return PlannedHerring(herring, ts, duration_s=rng.randint(3, 6) * MINUTE)

@@ -9,11 +9,20 @@ from urllib.parse import quote
 
 from triage.simulator.builder import CaseBuilder
 from triage.simulator.clock import MINUTE, iso_s
+from triage.simulator.rng import Rng
 from triage.simulator.schemas import AlertSummary
 from triage.simulator.spec import AlertKind
 
 ERROR_RATE_THRESHOLD = 5.0  # percent
 LATENCY_THRESHOLD_MS = 1000.0
+DISK_THRESHOLD_PCT = 90.0
+# The rule's "for" duration: how long the condition must hold before the alert fires.
+FOR_SECONDS: dict[AlertKind, int] = {
+    "HighErrorRate": 2 * MINUTE,
+    "HighLatencyP95": 5 * MINUTE,
+    "DiskUsageHigh": 10 * MINUTE,
+    "PodRestartsHigh": 0,
+}
 
 
 @dataclass(frozen=True)
@@ -22,16 +31,27 @@ class AlertOutcome:
     summary: AlertSummary
 
 
+def onset(b: CaseBuilder, kind: AlertKind, rng: Rng) -> int:
+    """When the alert condition started to hold: the ``for`` duration plus one or two rule
+    evaluations before the alert fired. Scenarios anchor the incident's visible start here,
+    so an alert never fires long after its condition became true."""
+    return b.alert_ts - FOR_SECONDS[kind] - rng.randint(15, 75)
+
+
 def enforce_condition(b: CaseBuilder, kind: AlertKind, service: str) -> None:
     """Make the metric behind a firing alert actually exceed its threshold for the ``for``
     window, so the alert never contradicts the metrics the agent will look at."""
     rng = b.rng.derive("alert-condition")
+    start = b.alert_ts - FOR_SECONDS[kind]
     if kind == "HighErrorRate":
-        start, floor = b.alert_ts - 2 * MINUTE, ERROR_RATE_THRESHOLD * rng.uniform(1.1, 1.5)
+        floor = ERROR_RATE_THRESHOLD * rng.uniform(1.1, 1.5)
         b.floor(service, "error_rate", start, b.alert_ts + 1, floor)
     elif kind == "HighLatencyP95":
-        start, floor = b.alert_ts - 5 * MINUTE, LATENCY_THRESHOLD_MS * rng.uniform(1.05, 1.3)
+        floor = LATENCY_THRESHOLD_MS * rng.uniform(1.05, 1.3)
         b.floor(service, "latency_p95", start, b.alert_ts + 1, floor)
+    elif kind == "DiskUsageHigh":
+        floor = DISK_THRESHOLD_PCT + rng.uniform(0.5, 2.0)
+        b.floor(service, "disk_usage", start, b.alert_ts + 1, floor)
 
 
 def build_alert(
@@ -56,6 +76,15 @@ def build_alert(
             "sum(increase(kube_pod_container_status_restarts_total"
             f'{{namespace="prod",container="{service}"}}[1h])) >= 3'
         )
+    elif kind == "DiskUsageHigh":
+        summary = "disk usage > 90% for 10m"
+        value = b.value_at(service, "disk_usage", b.alert_ts)
+        description = (
+            f"{service} volume is {value:.1f}% full (threshold 90%)."
+            if value is not None
+            else f"{service} volume is more than 90% full."
+        )
+        expr = f'max(disk_used_percent{{namespace="prod",service="{service}"}}) > 90'
     else:
         summary = "p95 latency > 1000ms for 5m"
         value = b.value_at(service, "latency_p95", b.alert_ts)
