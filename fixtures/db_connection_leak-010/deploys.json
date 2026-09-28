@@ -1,0 +1,137 @@
+[
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.11.3",
+    "service": "orders-service",
+    "ts": "2026-03-21T09:30:00Z",
+    "version": "v2.11.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.31.1",
+    "service": "api-gateway",
+    "ts": "2026-03-21T17:48:00Z",
+    "version": "v1.31.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.11.4",
+    "service": "orders-service",
+    "ts": "2026-03-21T20:49:00Z",
+    "version": "v2.11.5"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.31.2",
+    "service": "api-gateway",
+    "ts": "2026-03-22T09:34:00Z",
+    "version": "v1.31.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.31.3",
+    "service": "api-gateway",
+    "ts": "2026-03-22T10:32:00Z",
+    "version": "v1.31.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.31.4",
+    "service": "api-gateway",
+    "ts": "2026-03-22T14:34:00Z",
+    "version": "v1.31.5"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0394",
+    "service": "payments-service",
+    "ts": "2026-03-23T20:05:00Z",
+    "version": "cfg-0395"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.24.0",
+    "service": "ledger-service",
+    "ts": "2026-03-24T11:32:00Z",
+    "version": "v1.24.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.8.1",
+    "service": "payments-service",
+    "ts": "2026-03-25T16:32:00Z",
+    "version": "v3.8.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.31.5",
+    "service": "api-gateway",
+    "ts": "2026-03-25T20:52:00Z",
+    "version": "v1.31.6"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.31.6",
+    "service": "api-gateway",
+    "ts": "2026-03-26T11:15:00Z",
+    "version": "v1.31.7"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0232",
+    "service": "api-gateway",
+    "ts": "2026-03-26T20:59:00Z",
+    "version": "cfg-0233"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.11.5",
+    "service": "orders-service",
+    "ts": "2026-03-27T15:03:00Z",
+    "version": "v2.11.6"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Stream account statements directly from the database",
+    "previous_version": "v1.24.1",
+    "service": "ledger-service",
+    "ts": "2026-03-28T14:57:00Z",
+    "version": "v1.24.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0395",
+    "service": "payments-service",
+    "ts": "2026-03-28T19:53:35Z",
+    "version": "cfg-0396"
+  }
+]

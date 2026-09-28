@@ -1,0 +1,74 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.2",
+    "service": "ledger-service",
+    "ts": "2026-03-18T11:56:00Z",
+    "version": "v1.19.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.33.3",
+    "service": "api-gateway",
+    "ts": "2026-03-20T13:06:00Z",
+    "version": "v1.34.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.19.3",
+    "service": "ledger-service",
+    "ts": "2026-03-20T17:26:00Z",
+    "version": "v1.19.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0181",
+    "service": "ledger-service",
+    "ts": "2026-03-21T11:34:00Z",
+    "version": "cfg-0182"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.4",
+    "service": "ledger-service",
+    "ts": "2026-03-23T20:39:00Z",
+    "version": "v1.20.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-03-24T10:57:00Z",
+    "version": "v3.5.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.3",
+    "service": "payments-service",
+    "ts": "2026-03-24T16:18:00Z",
+    "version": "v3.5.4"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set PROVIDER_READ_TIMEOUT_MS=200 (was 2000)",
+    "previous_version": "cfg-0358",
+    "service": "payments-service",
+    "ts": "2026-03-25T12:19:27Z",
+    "version": "cfg-0359"
+  }
+]

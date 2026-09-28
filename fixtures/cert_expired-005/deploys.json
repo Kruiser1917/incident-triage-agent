@@ -1,0 +1,110 @@
+[
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-02-24T20:27:00Z",
+    "version": "v3.8.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.19.1",
+    "service": "ledger-service",
+    "ts": "2026-02-26T13:20:00Z",
+    "version": "v1.19.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0360",
+    "service": "payments-service",
+    "ts": "2026-02-26T16:27:00Z",
+    "version": "cfg-0361"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.2",
+    "service": "ledger-service",
+    "ts": "2026-02-26T17:40:00Z",
+    "version": "v1.19.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0230",
+    "service": "api-gateway",
+    "ts": "2026-02-27T11:31:00Z",
+    "version": "cfg-0231"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.3",
+    "service": "payments-service",
+    "ts": "2026-02-27T14:04:00Z",
+    "version": "v3.9.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.12.0",
+    "service": "orders-service",
+    "ts": "2026-02-27T14:19:00Z",
+    "version": "v2.12.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-02-28T14:29:00Z",
+    "version": "v3.9.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.12.1",
+    "service": "orders-service",
+    "ts": "2026-02-28T20:06:00Z",
+    "version": "v2.12.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.32.2",
+    "service": "api-gateway",
+    "ts": "2026-03-01T17:48:00Z",
+    "version": "v1.32.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0361",
+    "service": "payments-service",
+    "ts": "2026-03-03T10:58:00Z",
+    "version": "cfg-0362"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0228",
+    "service": "orders-service",
+    "ts": "2026-03-03T13:30:10Z",
+    "version": "cfg-0229"
+  }
+]

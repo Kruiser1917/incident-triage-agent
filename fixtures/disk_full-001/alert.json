@@ -1,0 +1,44 @@
+{
+  "alerts": [
+    {
+      "annotations": {
+        "description": "postgres volume is 91.8% full (threshold 90%).",
+        "runbook_url": "https://runbooks.internal/alerts/DiskUsageHigh",
+        "summary": "disk usage > 90% for 10m"
+      },
+      "endsAt": "0001-01-01T00:00:00Z",
+      "fingerprint": "8fb285b9ad710ddd",
+      "generatorURL": "http://prometheus.prod.internal:9090/graph?g0.expr=max%28disk_used_percent%7Bnamespace%3D%22prod%22%2Cservice%3D%22postgres%22%7D%29%20%3E%2090",
+      "labels": {
+        "alertname": "DiskUsageHigh",
+        "namespace": "prod",
+        "service": "postgres",
+        "severity": "warning",
+        "team": "platform-team"
+      },
+      "startsAt": "2026-03-17T14:00:00Z",
+      "status": "firing"
+    }
+  ],
+  "commonAnnotations": {
+    "description": "postgres volume is 91.8% full (threshold 90%).",
+    "runbook_url": "https://runbooks.internal/alerts/DiskUsageHigh",
+    "summary": "disk usage > 90% for 10m"
+  },
+  "commonLabels": {
+    "alertname": "DiskUsageHigh",
+    "namespace": "prod",
+    "service": "postgres",
+    "severity": "warning",
+    "team": "platform-team"
+  },
+  "externalURL": "http://alertmanager.prod.internal:9093",
+  "groupKey": "{}:{alertname=\"DiskUsageHigh\"}",
+  "groupLabels": {
+    "alertname": "DiskUsageHigh"
+  },
+  "receiver": "triage-agent",
+  "status": "firing",
+  "truncatedAlerts": 0,
+  "version": "4"
+}

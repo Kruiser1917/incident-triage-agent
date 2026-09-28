@@ -1,0 +1,56 @@
+[
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.23.2",
+    "service": "ledger-service",
+    "ts": "2026-03-07T14:22:00Z",
+    "version": "v1.23.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-03-08T15:42:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.6.0",
+    "service": "payments-service",
+    "ts": "2026-03-08T20:32:00Z",
+    "version": "v3.6.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.34.1",
+    "service": "api-gateway",
+    "ts": "2026-03-08T20:53:00Z",
+    "version": "v1.35.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0209",
+    "service": "api-gateway",
+    "ts": "2026-03-09T13:50:00Z",
+    "version": "cfg-0210"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Recalculate running balance on every entry post",
+    "previous_version": "v1.23.3",
+    "service": "ledger-service",
+    "ts": "2026-03-13T10:21:53Z",
+    "version": "v1.23.4"
+  }
+]

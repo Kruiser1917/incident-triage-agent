@@ -1,0 +1,110 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.31.0",
+    "service": "api-gateway",
+    "ts": "2026-03-10T16:13:00Z",
+    "version": "v1.31.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.31.1",
+    "service": "api-gateway",
+    "ts": "2026-03-10T20:58:00Z",
+    "version": "v1.31.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.16.3",
+    "service": "orders-service",
+    "ts": "2026-03-11T11:53:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.31.2",
+    "service": "api-gateway",
+    "ts": "2026-03-11T17:26:00Z",
+    "version": "v1.32.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.17.0",
+    "service": "orders-service",
+    "ts": "2026-03-13T10:19:00Z",
+    "version": "v2.18.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.32.0",
+    "service": "api-gateway",
+    "ts": "2026-03-14T14:54:00Z",
+    "version": "v1.33.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0100",
+    "service": "ledger-service",
+    "ts": "2026-03-14T20:16:00Z",
+    "version": "cfg-0101"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-03-14T20:23:00Z",
+    "version": "v3.9.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.3",
+    "service": "payments-service",
+    "ts": "2026-03-15T10:00:00Z",
+    "version": "v3.9.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.33.0",
+    "service": "api-gateway",
+    "ts": "2026-03-17T10:24:00Z",
+    "version": "v1.33.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.4",
+    "service": "payments-service",
+    "ts": "2026-03-17T14:52:00Z",
+    "version": "v3.9.5"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.21.1",
+    "service": "ledger-service",
+    "ts": "2026-03-17T20:01:32Z",
+    "version": "v1.21.2"
+  }
+]

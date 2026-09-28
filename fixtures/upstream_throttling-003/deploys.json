@@ -1,0 +1,110 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.13.3",
+    "service": "orders-service",
+    "ts": "2026-03-12T13:20:00Z",
+    "version": "v2.13.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.7.2",
+    "service": "payments-service",
+    "ts": "2026-03-12T17:51:00Z",
+    "version": "v3.8.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0183",
+    "service": "ledger-service",
+    "ts": "2026-03-14T09:04:00Z",
+    "version": "cfg-0184"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.13.4",
+    "service": "orders-service",
+    "ts": "2026-03-14T20:17:00Z",
+    "version": "v2.14.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0205",
+    "service": "payments-service",
+    "ts": "2026-03-15T10:13:00Z",
+    "version": "cfg-0206"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0206",
+    "service": "payments-service",
+    "ts": "2026-03-15T10:54:00Z",
+    "version": "cfg-0207"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.14.0",
+    "service": "orders-service",
+    "ts": "2026-03-17T15:38:00Z",
+    "version": "v2.14.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.28.0",
+    "service": "api-gateway",
+    "ts": "2026-03-18T11:51:00Z",
+    "version": "v1.28.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.28.1",
+    "service": "api-gateway",
+    "ts": "2026-03-19T09:39:00Z",
+    "version": "v1.28.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.8.0",
+    "service": "payments-service",
+    "ts": "2026-03-19T10:02:00Z",
+    "version": "v3.8.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.28.2",
+    "service": "api-gateway",
+    "ts": "2026-03-19T11:26:00Z",
+    "version": "v1.29.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set PROVIDER_MAX_RETRIES=5 (was 2)",
+    "previous_version": "cfg-0207",
+    "service": "payments-service",
+    "ts": "2026-03-19T12:51:45Z",
+    "version": "cfg-0208"
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-07T11:32:00Z",
+    "version": "v3.8.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.32.0",
+    "service": "api-gateway",
+    "ts": "2026-03-07T16:44:00Z",
+    "version": "v1.32.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.20.1",
+    "service": "ledger-service",
+    "ts": "2026-03-09T20:10:00Z",
+    "version": "v1.20.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0376",
+    "service": "ledger-service",
+    "ts": "2026-03-10T11:30:00Z",
+    "version": "cfg-0377"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.20.2",
+    "service": "ledger-service",
+    "ts": "2026-03-11T09:04:00Z",
+    "version": "v1.20.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.8.0",
+    "service": "payments-service",
+    "ts": "2026-03-11T17:49:00Z",
+    "version": "v3.8.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.16.1",
+    "service": "orders-service",
+    "ts": "2026-03-12T15:39:00Z",
+    "version": "v2.16.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.20.3",
+    "service": "ledger-service",
+    "ts": "2026-03-13T13:57:00Z",
+    "version": "v1.20.4"
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-17T13:37:00Z",
+    "version": "v3.9.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.15.0",
+    "service": "orders-service",
+    "ts": "2026-03-20T13:22:00Z",
+    "version": "v2.16.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-03-20T13:55:00Z",
+    "version": "v3.9.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0362",
+    "service": "api-gateway",
+    "ts": "2026-03-21T15:15:00Z",
+    "version": "cfg-0363"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.3",
+    "service": "payments-service",
+    "ts": "2026-03-21T15:53:00Z",
+    "version": "v3.9.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.16.0",
+    "service": "orders-service",
+    "ts": "2026-03-23T11:25:00Z",
+    "version": "v2.16.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.1",
+    "service": "orders-service",
+    "ts": "2026-03-23T17:09:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.2",
+    "service": "api-gateway",
+    "ts": "2026-03-23T17:11:00Z",
+    "version": "v1.33.3"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.17.0",
+    "service": "orders-service",
+    "ts": "2026-03-23T17:22:00Z",
+    "version": "v2.18.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set DB_STATEMENT_TIMEOUT=50ms (was 5s)",
+    "previous_version": "cfg-0119",
+    "service": "ledger-service",
+    "ts": "2026-03-24T16:21:53Z",
+    "version": "cfg-0120"
+  }
+]

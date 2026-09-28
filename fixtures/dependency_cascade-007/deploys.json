@@ -1,0 +1,74 @@
+[
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-03-16T09:33:00Z",
+    "version": "v3.5.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.30.2",
+    "service": "api-gateway",
+    "ts": "2026-03-16T16:22:00Z",
+    "version": "v1.30.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.5.3",
+    "service": "payments-service",
+    "ts": "2026-03-17T20:51:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.12.1",
+    "service": "orders-service",
+    "ts": "2026-03-18T09:57:00Z",
+    "version": "v2.12.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.30.3",
+    "service": "api-gateway",
+    "ts": "2026-03-19T13:49:00Z",
+    "version": "v1.30.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.19.1",
+    "service": "ledger-service",
+    "ts": "2026-03-20T15:39:00Z",
+    "version": "v1.20.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.30.4",
+    "service": "api-gateway",
+    "ts": "2026-03-20T20:36:00Z",
+    "version": "v1.31.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Recalculate running balance on every entry post",
+    "previous_version": "v1.20.0",
+    "service": "ledger-service",
+    "ts": "2026-03-21T12:03:45Z",
+    "version": "v1.20.1"
+  }
+]

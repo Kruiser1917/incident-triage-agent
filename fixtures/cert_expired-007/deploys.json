@@ -1,0 +1,74 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0102",
+    "service": "ledger-service",
+    "ts": "2026-03-21T09:53:00Z",
+    "version": "cfg-0103"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-03-21T14:09:00Z",
+    "version": "v1.22.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.2",
+    "service": "ledger-service",
+    "ts": "2026-03-21T15:38:00Z",
+    "version": "v1.22.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.3",
+    "service": "api-gateway",
+    "ts": "2026-03-22T10:36:00Z",
+    "version": "v1.32.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0273",
+    "service": "payments-service",
+    "ts": "2026-03-23T20:39:00Z",
+    "version": "cfg-0274"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.14.0",
+    "service": "orders-service",
+    "ts": "2026-03-24T10:52:00Z",
+    "version": "v2.14.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0103",
+    "service": "ledger-service",
+    "ts": "2026-03-24T10:58:00Z",
+    "version": "cfg-0104"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0104",
+    "service": "ledger-service",
+    "ts": "2026-03-25T13:35:00Z",
+    "version": "cfg-0105"
+  }
+]

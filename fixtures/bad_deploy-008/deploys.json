@@ -1,0 +1,119 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.13.1",
+    "service": "orders-service",
+    "ts": "2026-03-07T09:40:00Z",
+    "version": "v2.13.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.23.0",
+    "service": "ledger-service",
+    "ts": "2026-03-07T20:11:00Z",
+    "version": "v1.23.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.13.2",
+    "service": "orders-service",
+    "ts": "2026-03-10T13:42:00Z",
+    "version": "v2.13.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.13.3",
+    "service": "orders-service",
+    "ts": "2026-03-10T20:29:00Z",
+    "version": "v2.13.4"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0285",
+    "service": "orders-service",
+    "ts": "2026-03-12T14:35:00Z",
+    "version": "cfg-0286"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.32.1",
+    "service": "api-gateway",
+    "ts": "2026-03-12T14:39:00Z",
+    "version": "v1.32.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.2",
+    "service": "api-gateway",
+    "ts": "2026-03-13T09:48:00Z",
+    "version": "v1.32.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0400",
+    "service": "ledger-service",
+    "ts": "2026-03-13T11:31:00Z",
+    "version": "cfg-0401"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.13.4",
+    "service": "orders-service",
+    "ts": "2026-03-13T13:02:00Z",
+    "version": "v2.13.5"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0372",
+    "service": "api-gateway",
+    "ts": "2026-03-13T16:44:00Z",
+    "version": "cfg-0373"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0183",
+    "service": "payments-service",
+    "ts": "2026-03-13T17:33:00Z",
+    "version": "cfg-0184"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0286",
+    "service": "orders-service",
+    "ts": "2026-03-14T10:11:00Z",
+    "version": "cfg-0287"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Load order items for order history responses",
+    "previous_version": "v2.13.5",
+    "service": "orders-service",
+    "ts": "2026-03-14T18:40:09Z",
+    "version": "v2.13.6"
+  }
+]

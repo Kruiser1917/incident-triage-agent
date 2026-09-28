@@ -1,0 +1,119 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.13.1",
+    "service": "orders-service",
+    "ts": "2026-03-10T09:53:00Z",
+    "version": "v2.13.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.29.1",
+    "service": "api-gateway",
+    "ts": "2026-03-10T14:19:00Z",
+    "version": "v1.29.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.23.2",
+    "service": "ledger-service",
+    "ts": "2026-03-11T13:23:00Z",
+    "version": "v1.23.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.23.3",
+    "service": "ledger-service",
+    "ts": "2026-03-13T09:17:00Z",
+    "version": "v1.23.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.13.2",
+    "service": "orders-service",
+    "ts": "2026-03-13T13:04:00Z",
+    "version": "v2.13.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.23.4",
+    "service": "ledger-service",
+    "ts": "2026-03-13T13:27:00Z",
+    "version": "v1.23.5"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0169",
+    "service": "orders-service",
+    "ts": "2026-03-13T13:59:00Z",
+    "version": "cfg-0170"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.29.2",
+    "service": "api-gateway",
+    "ts": "2026-03-13T20:13:00Z",
+    "version": "v1.29.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.13.3",
+    "service": "orders-service",
+    "ts": "2026-03-14T13:47:00Z",
+    "version": "v2.13.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0170",
+    "service": "orders-service",
+    "ts": "2026-03-15T10:12:00Z",
+    "version": "cfg-0171"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.13.4",
+    "service": "orders-service",
+    "ts": "2026-03-16T11:02:00Z",
+    "version": "v2.13.5"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.13.5",
+    "service": "orders-service",
+    "ts": "2026-03-17T11:01:00Z",
+    "version": "v2.14.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Stream account statements directly from the database",
+    "previous_version": "v1.23.5",
+    "service": "ledger-service",
+    "ts": "2026-03-17T11:54:00Z",
+    "version": "v1.23.6"
+  }
+]

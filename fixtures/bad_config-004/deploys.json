@@ -1,0 +1,101 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.33.1",
+    "service": "api-gateway",
+    "ts": "2026-03-06T09:33:00Z",
+    "version": "v1.33.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.2",
+    "service": "api-gateway",
+    "ts": "2026-03-06T11:43:00Z",
+    "version": "v1.33.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.23.1",
+    "service": "ledger-service",
+    "ts": "2026-03-07T09:20:00Z",
+    "version": "v1.24.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-07T17:09:00Z",
+    "version": "v3.10.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.0",
+    "service": "ledger-service",
+    "ts": "2026-03-08T09:37:00Z",
+    "version": "v1.25.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.33.3",
+    "service": "api-gateway",
+    "ts": "2026-03-09T11:14:00Z",
+    "version": "v1.33.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0225",
+    "service": "api-gateway",
+    "ts": "2026-03-09T15:32:00Z",
+    "version": "cfg-0226"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0395",
+    "service": "payments-service",
+    "ts": "2026-03-10T13:12:00Z",
+    "version": "cfg-0396"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.25.0",
+    "service": "ledger-service",
+    "ts": "2026-03-12T13:59:00Z",
+    "version": "v1.25.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.10.0",
+    "service": "payments-service",
+    "ts": "2026-03-12T17:56:00Z",
+    "version": "v3.10.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set PAYMENTS_ROUTE_TIMEOUT=150ms (was 15s)",
+    "previous_version": "cfg-0226",
+    "service": "api-gateway",
+    "ts": "2026-03-13T10:11:55Z",
+    "version": "cfg-0227"
+  }
+]

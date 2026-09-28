@@ -1,0 +1,92 @@
+[
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.33.3",
+    "service": "api-gateway",
+    "ts": "2026-02-24T15:35:00Z",
+    "version": "v1.33.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.4",
+    "service": "api-gateway",
+    "ts": "2026-02-24T17:53:00Z",
+    "version": "v1.33.5"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.33.5",
+    "service": "api-gateway",
+    "ts": "2026-02-25T20:30:00Z",
+    "version": "v1.33.6"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0288",
+    "service": "payments-service",
+    "ts": "2026-02-27T09:29:00Z",
+    "version": "cfg-0289"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0259",
+    "service": "orders-service",
+    "ts": "2026-02-28T13:04:00Z",
+    "version": "cfg-0260"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.6",
+    "service": "api-gateway",
+    "ts": "2026-03-01T16:12:00Z",
+    "version": "v1.33.7"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.10.2",
+    "service": "orders-service",
+    "ts": "2026-03-02T15:15:00Z",
+    "version": "v2.10.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0260",
+    "service": "orders-service",
+    "ts": "2026-03-02T15:55:00Z",
+    "version": "cfg-0261"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Keep recent customer orders in a process-local cache",
+    "previous_version": "v2.10.3",
+    "service": "orders-service",
+    "ts": "2026-03-03T07:49:30Z",
+    "version": "v2.10.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.7",
+    "service": "api-gateway",
+    "ts": "2026-03-03T13:14:07Z",
+    "version": "v1.34.0"
+  }
+]

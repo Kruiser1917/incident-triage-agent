@@ -1,0 +1,101 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.0",
+    "service": "ledger-service",
+    "ts": "2026-03-10T14:26:00Z",
+    "version": "v1.19.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.3",
+    "service": "orders-service",
+    "ts": "2026-03-12T11:35:00Z",
+    "version": "v2.16.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.19.1",
+    "service": "ledger-service",
+    "ts": "2026-03-12T20:10:00Z",
+    "version": "v1.20.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.34.3",
+    "service": "api-gateway",
+    "ts": "2026-03-13T13:53:00Z",
+    "version": "v1.34.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.34.4",
+    "service": "api-gateway",
+    "ts": "2026-03-13T15:22:00Z",
+    "version": "v1.34.5"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.4",
+    "service": "orders-service",
+    "ts": "2026-03-13T20:11:00Z",
+    "version": "v2.16.5"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0170",
+    "service": "api-gateway",
+    "ts": "2026-03-14T13:56:00Z",
+    "version": "cfg-0171"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.8.3",
+    "service": "payments-service",
+    "ts": "2026-03-15T13:04:00Z",
+    "version": "v3.9.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-15T13:38:00Z",
+    "version": "v3.9.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-16T13:53:00Z",
+    "version": "v3.10.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.10.0",
+    "service": "payments-service",
+    "ts": "2026-03-17T09:05:00Z",
+    "version": "v3.10.1"
+  }
+]

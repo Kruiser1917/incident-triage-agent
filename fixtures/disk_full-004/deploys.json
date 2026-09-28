@@ -1,0 +1,110 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.24.3",
+    "service": "ledger-service",
+    "ts": "2026-02-27T10:12:00Z",
+    "version": "v1.24.4"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.5.0",
+    "service": "payments-service",
+    "ts": "2026-02-27T11:32:00Z",
+    "version": "v3.5.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.4",
+    "service": "ledger-service",
+    "ts": "2026-02-27T16:10:00Z",
+    "version": "v1.24.5"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.14.0",
+    "service": "orders-service",
+    "ts": "2026-02-28T20:22:00Z",
+    "version": "v2.14.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.1",
+    "service": "payments-service",
+    "ts": "2026-03-01T10:38:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.6.0",
+    "service": "payments-service",
+    "ts": "2026-03-01T13:31:00Z",
+    "version": "v3.6.1"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.24.5",
+    "service": "ledger-service",
+    "ts": "2026-03-01T16:09:00Z",
+    "version": "v1.24.6"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.14.1",
+    "service": "orders-service",
+    "ts": "2026-03-02T14:06:00Z",
+    "version": "v2.14.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.24.6",
+    "service": "ledger-service",
+    "ts": "2026-03-03T14:25:00Z",
+    "version": "v1.25.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.3",
+    "service": "api-gateway",
+    "ts": "2026-03-03T14:55:00Z",
+    "version": "v1.32.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.25.0",
+    "service": "ledger-service",
+    "ts": "2026-03-03T17:17:00Z",
+    "version": "v1.26.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=debug (was info) to investigate statement export issues",
+    "previous_version": "cfg-0169",
+    "service": "payments-service",
+    "ts": "2026-03-03T17:38:45Z",
+    "version": "cfg-0170"
+  }
+]

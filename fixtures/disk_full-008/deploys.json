@@ -1,0 +1,101 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.0",
+    "service": "payments-service",
+    "ts": "2026-03-11T14:32:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0157",
+    "service": "orders-service",
+    "ts": "2026-03-11T15:29:00Z",
+    "version": "cfg-0158"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.11.3",
+    "service": "orders-service",
+    "ts": "2026-03-14T11:08:00Z",
+    "version": "v2.11.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.11.4",
+    "service": "orders-service",
+    "ts": "2026-03-14T14:28:00Z",
+    "version": "v2.11.5"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0362",
+    "service": "payments-service",
+    "ts": "2026-03-15T10:32:00Z",
+    "version": "cfg-0363"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=debug (was info) to investigate statement export issues",
+    "previous_version": "cfg-0158",
+    "service": "orders-service",
+    "ts": "2026-03-16T07:54:30Z",
+    "version": "cfg-0159"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.11.5",
+    "service": "orders-service",
+    "ts": "2026-03-16T11:09:00Z",
+    "version": "v2.11.6"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.28.1",
+    "service": "api-gateway",
+    "ts": "2026-03-16T20:08:00Z",
+    "version": "v1.29.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.21.2",
+    "service": "ledger-service",
+    "ts": "2026-03-16T20:17:00Z",
+    "version": "v1.21.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.29.0",
+    "service": "api-gateway",
+    "ts": "2026-03-17T10:15:00Z",
+    "version": "v1.30.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0363",
+    "service": "payments-service",
+    "ts": "2026-03-17T14:16:00Z",
+    "version": "cfg-0364"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.5.1",
+    "service": "payments-service",
+    "ts": "2026-03-07T15:25:00Z",
+    "version": "v3.5.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.14.1",
+    "service": "orders-service",
+    "ts": "2026-03-07T17:56:00Z",
+    "version": "v2.14.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.21.0",
+    "service": "ledger-service",
+    "ts": "2026-03-08T16:06:00Z",
+    "version": "v1.22.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.22.0",
+    "service": "ledger-service",
+    "ts": "2026-03-10T17:38:00Z",
+    "version": "v1.23.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.28.3",
+    "service": "api-gateway",
+    "ts": "2026-03-11T13:44:00Z",
+    "version": "v1.28.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.23.0",
+    "service": "ledger-service",
+    "ts": "2026-03-11T20:54:00Z",
+    "version": "v1.24.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.0",
+    "service": "ledger-service",
+    "ts": "2026-03-13T10:26:00Z",
+    "version": "v1.24.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0154",
+    "service": "api-gateway",
+    "ts": "2026-03-13T15:35:00Z",
+    "version": "cfg-0155"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Apply geo risk rules to the 3DS2 challenge flow",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-03-14T10:33:38Z",
+    "version": "v3.6.0"
+  }
+]

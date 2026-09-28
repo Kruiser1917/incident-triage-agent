@@ -1,0 +1,137 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.6.2",
+    "service": "payments-service",
+    "ts": "2026-03-06T17:54:00Z",
+    "version": "v3.6.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.19.2",
+    "service": "ledger-service",
+    "ts": "2026-03-07T15:14:00Z",
+    "version": "v1.19.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.30.1",
+    "service": "api-gateway",
+    "ts": "2026-03-08T15:49:00Z",
+    "version": "v1.31.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.10.2",
+    "service": "orders-service",
+    "ts": "2026-03-09T09:21:00Z",
+    "version": "v2.10.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.31.0",
+    "service": "api-gateway",
+    "ts": "2026-03-09T11:30:00Z",
+    "version": "v1.31.1"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.19.3",
+    "service": "ledger-service",
+    "ts": "2026-03-09T13:53:00Z",
+    "version": "v1.20.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0239",
+    "service": "orders-service",
+    "ts": "2026-03-09T16:01:00Z",
+    "version": "cfg-0240"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.10.3",
+    "service": "orders-service",
+    "ts": "2026-03-09T20:54:00Z",
+    "version": "v2.10.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0240",
+    "service": "orders-service",
+    "ts": "2026-03-10T09:39:00Z",
+    "version": "cfg-0241"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-10T17:44:00Z",
+    "version": "v3.6.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.20.0",
+    "service": "ledger-service",
+    "ts": "2026-03-11T10:31:00Z",
+    "version": "v1.20.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.31.1",
+    "service": "api-gateway",
+    "ts": "2026-03-11T13:24:00Z",
+    "version": "v1.31.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.31.2",
+    "service": "api-gateway",
+    "ts": "2026-03-11T16:43:00Z",
+    "version": "v1.31.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.10.4",
+    "service": "orders-service",
+    "ts": "2026-03-12T16:43:00Z",
+    "version": "v2.11.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Refactor entry posting to support reversals",
+    "previous_version": "v1.20.1",
+    "service": "ledger-service",
+    "ts": "2026-03-12T19:36:39Z",
+    "version": "v1.20.2"
+  }
+]

@@ -1,0 +1,83 @@
+[
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.5.1",
+    "service": "payments-service",
+    "ts": "2026-02-24T13:40:00Z",
+    "version": "v3.5.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-02-24T20:01:00Z",
+    "version": "v3.5.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-02-26T09:12:00Z",
+    "version": "v1.22.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.5.3",
+    "service": "payments-service",
+    "ts": "2026-02-26T11:02:00Z",
+    "version": "v3.5.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.4",
+    "service": "payments-service",
+    "ts": "2026-02-26T11:55:00Z",
+    "version": "v3.6.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.0",
+    "service": "payments-service",
+    "ts": "2026-02-26T15:38:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.22.2",
+    "service": "ledger-service",
+    "ts": "2026-02-26T16:03:00Z",
+    "version": "v1.22.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-01T09:21:00Z",
+    "version": "v3.7.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.33.1",
+    "service": "api-gateway",
+    "ts": "2026-03-02T10:10:00Z",
+    "version": "v1.33.2"
+  }
+]

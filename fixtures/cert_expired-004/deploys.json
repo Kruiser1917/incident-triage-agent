@@ -1,0 +1,101 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade Envoy to 1.31.2",
+    "previous_version": "v1.34.3",
+    "service": "api-gateway",
+    "ts": "2026-03-05T13:19:00Z",
+    "version": "v1.34.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.14.2",
+    "service": "orders-service",
+    "ts": "2026-03-05T14:58:00Z",
+    "version": "v2.15.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.21.3",
+    "service": "ledger-service",
+    "ts": "2026-03-07T14:13:00Z",
+    "version": "v1.21.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.34.4",
+    "service": "api-gateway",
+    "ts": "2026-03-07T15:21:00Z",
+    "version": "v1.34.5"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0271",
+    "service": "orders-service",
+    "ts": "2026-03-08T13:31:00Z",
+    "version": "cfg-0272"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.34.5",
+    "service": "api-gateway",
+    "ts": "2026-03-09T09:42:00Z",
+    "version": "v1.34.6"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-09T10:15:00Z",
+    "version": "v3.10.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.15.0",
+    "service": "orders-service",
+    "ts": "2026-03-09T10:40:00Z",
+    "version": "v2.15.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.34.6",
+    "service": "api-gateway",
+    "ts": "2026-03-11T09:47:00Z",
+    "version": "v1.34.7"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0272",
+    "service": "orders-service",
+    "ts": "2026-03-11T09:54:00Z",
+    "version": "cfg-0273"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.34.7",
+    "service": "api-gateway",
+    "ts": "2026-03-11T16:33:00Z",
+    "version": "v1.34.8"
+  }
+]

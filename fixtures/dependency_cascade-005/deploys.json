@@ -1,0 +1,101 @@
+[
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0390",
+    "service": "payments-service",
+    "ts": "2026-03-03T16:36:00Z",
+    "version": "cfg-0391"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.19.3",
+    "service": "ledger-service",
+    "ts": "2026-03-04T10:48:00Z",
+    "version": "v1.19.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.14.1",
+    "service": "orders-service",
+    "ts": "2026-03-06T11:38:00Z",
+    "version": "v2.14.2"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.8.1",
+    "service": "payments-service",
+    "ts": "2026-03-06T16:10:00Z",
+    "version": "v3.8.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.14.2",
+    "service": "orders-service",
+    "ts": "2026-03-07T09:30:00Z",
+    "version": "v2.14.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0355",
+    "service": "api-gateway",
+    "ts": "2026-03-07T09:43:00Z",
+    "version": "cfg-0356"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add retry jitter to webhook deliveries",
+    "previous_version": "v2.14.3",
+    "service": "orders-service",
+    "ts": "2026-03-09T11:31:00Z",
+    "version": "v2.14.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.33.3",
+    "service": "api-gateway",
+    "ts": "2026-03-09T11:55:00Z",
+    "version": "v1.33.4"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-03-09T16:31:00Z",
+    "version": "v3.8.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set maxmemory-policy noeviction (was allkeys-lru)",
+    "previous_version": "cfg-0335",
+    "service": "redis",
+    "ts": "2026-03-09T16:40:30Z",
+    "version": "cfg-0336"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.3",
+    "service": "payments-service",
+    "ts": "2026-03-10T12:48:49Z",
+    "version": "v3.8.4"
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "alerts": [
+    {
+      "annotations": {
+        "description": "3 container restarts across orders-service pods in the last hour.",
+        "runbook_url": "https://runbooks.internal/alerts/PodRestartsHigh",
+        "summary": "3+ container restarts in 1h"
+      },
+      "endsAt": "0001-01-01T00:00:00Z",
+      "fingerprint": "cefc555320f139fd",
+      "generatorURL": "http://prometheus.prod.internal:9090/graph?g0.expr=sum%28increase%28kube_pod_container_status_restarts_total%7Bnamespace%3D%22prod%22%2Ccontainer%3D%22orders-service%22%7D%5B1h%5D%29%29%20%3E%3D%203",
+      "labels": {
+        "alertname": "PodRestartsHigh",
+        "namespace": "prod",
+        "service": "orders-service",
+        "severity": "warning",
+        "team": "orders-team"
+      },
+      "startsAt": "2026-03-23T11:57:30Z",
+      "status": "firing"
+    }
+  ],
+  "commonAnnotations": {
+    "description": "3 container restarts across orders-service pods in the last hour.",
+    "runbook_url": "https://runbooks.internal/alerts/PodRestartsHigh",
+    "summary": "3+ container restarts in 1h"
+  },
+  "commonLabels": {
+    "alertname": "PodRestartsHigh",
+    "namespace": "prod",
+    "service": "orders-service",
+    "severity": "warning",
+    "team": "orders-team"
+  },
+  "externalURL": "http://alertmanager.prod.internal:9093",
+  "groupKey": "{}:{alertname=\"PodRestartsHigh\"}",
+  "groupLabels": {
+    "alertname": "PodRestartsHigh"
+  },
+  "receiver": "triage-agent",
+  "status": "firing",
+  "truncatedAlerts": 0,
+  "version": "4"
+}

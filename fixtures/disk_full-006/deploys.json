@@ -1,0 +1,119 @@
+[
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.30.0",
+    "service": "api-gateway",
+    "ts": "2026-02-28T16:25:00Z",
+    "version": "v1.30.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-02-28T16:58:00Z",
+    "version": "v3.10.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.10.0",
+    "service": "payments-service",
+    "ts": "2026-03-01T13:06:00Z",
+    "version": "v3.10.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.10.1",
+    "service": "payments-service",
+    "ts": "2026-03-02T09:31:00Z",
+    "version": "v3.10.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.21.0",
+    "service": "ledger-service",
+    "ts": "2026-03-02T09:51:00Z",
+    "version": "v1.21.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.11.3",
+    "service": "orders-service",
+    "ts": "2026-03-02T17:38:00Z",
+    "version": "v2.12.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.21.1",
+    "service": "ledger-service",
+    "ts": "2026-03-03T11:02:00Z",
+    "version": "v1.21.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.12.0",
+    "service": "orders-service",
+    "ts": "2026-03-05T10:18:00Z",
+    "version": "v2.12.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.30.1",
+    "service": "api-gateway",
+    "ts": "2026-03-05T15:25:00Z",
+    "version": "v1.30.2"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.10.2",
+    "service": "payments-service",
+    "ts": "2026-03-05T15:47:00Z",
+    "version": "v3.11.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.12.1",
+    "service": "orders-service",
+    "ts": "2026-03-06T17:46:00Z",
+    "version": "v2.12.2"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=debug (was info) to investigate statement export issues",
+    "previous_version": "cfg-0108",
+    "service": "ledger-service",
+    "ts": "2026-03-06T21:31:30Z",
+    "version": "cfg-0109"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0160",
+    "service": "orders-service",
+    "ts": "2026-03-07T14:30:00Z",
+    "version": "cfg-0161"
+  }
+]

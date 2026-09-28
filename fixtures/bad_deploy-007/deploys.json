@@ -1,0 +1,119 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.15.2",
+    "service": "orders-service",
+    "ts": "2026-03-18T10:43:00Z",
+    "version": "v2.15.3"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.15.3",
+    "service": "orders-service",
+    "ts": "2026-03-20T14:43:00Z",
+    "version": "v2.15.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.15.4",
+    "service": "orders-service",
+    "ts": "2026-03-20T16:20:00Z",
+    "version": "v2.16.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-03-21T15:21:00Z",
+    "version": "v3.9.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.9.0",
+    "service": "payments-service",
+    "ts": "2026-03-22T13:04:00Z",
+    "version": "v3.10.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.20.1",
+    "service": "ledger-service",
+    "ts": "2026-03-22T13:14:00Z",
+    "version": "v1.20.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.20.2",
+    "service": "ledger-service",
+    "ts": "2026-03-22T13:24:00Z",
+    "version": "v1.20.3"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.16.0",
+    "service": "orders-service",
+    "ts": "2026-03-22T14:09:00Z",
+    "version": "v2.16.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.20.3",
+    "service": "ledger-service",
+    "ts": "2026-03-22T16:29:00Z",
+    "version": "v1.20.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0303",
+    "service": "ledger-service",
+    "ts": "2026-03-23T14:37:00Z",
+    "version": "cfg-0304"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.20.4",
+    "service": "ledger-service",
+    "ts": "2026-03-24T09:25:00Z",
+    "version": "v1.20.5"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.1",
+    "service": "orders-service",
+    "ts": "2026-03-24T17:20:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Apply geo risk rules to the 3DS2 challenge flow",
+    "previous_version": "v3.10.0",
+    "service": "payments-service",
+    "ts": "2026-03-25T12:10:31Z",
+    "version": "v3.11.0"
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.8.1",
+    "service": "payments-service",
+    "ts": "2026-03-04T16:16:00Z",
+    "version": "v3.8.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.21.0",
+    "service": "ledger-service",
+    "ts": "2026-03-04T20:37:00Z",
+    "version": "v1.21.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.34.2",
+    "service": "api-gateway",
+    "ts": "2026-03-05T09:34:00Z",
+    "version": "v1.34.3"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0211",
+    "service": "payments-service",
+    "ts": "2026-03-05T20:29:00Z",
+    "version": "cfg-0212"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.34.3",
+    "service": "api-gateway",
+    "ts": "2026-03-05T20:48:00Z",
+    "version": "v1.35.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.35.0",
+    "service": "api-gateway",
+    "ts": "2026-03-06T16:35:00Z",
+    "version": "v1.35.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.35.1",
+    "service": "api-gateway",
+    "ts": "2026-03-07T09:50:00Z",
+    "version": "v1.36.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-03-08T14:49:00Z",
+    "version": "v3.8.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.36.0",
+    "service": "api-gateway",
+    "ts": "2026-03-09T09:58:00Z",
+    "version": "v1.36.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.21.1",
+    "service": "ledger-service",
+    "ts": "2026-03-10T20:17:00Z",
+    "version": "v1.21.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Raise per-client rate limit to 200 req/s (was 150)",
+    "previous_version": "cfg-0374",
+    "service": "api-gateway",
+    "ts": "2026-03-11T10:51:00Z",
+    "version": "cfg-0375"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0298",
+    "service": "orders-service",
+    "ts": "2026-03-11T12:53:57Z",
+    "version": "cfg-0299"
+  }
+]

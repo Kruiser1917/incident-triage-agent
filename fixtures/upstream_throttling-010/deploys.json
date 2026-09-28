@@ -1,0 +1,128 @@
+[
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.10.0",
+    "service": "orders-service",
+    "ts": "2026-03-06T14:55:00Z",
+    "version": "v2.11.0"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.31.0",
+    "service": "api-gateway",
+    "ts": "2026-03-06T16:23:00Z",
+    "version": "v1.31.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.24.1",
+    "service": "ledger-service",
+    "ts": "2026-03-07T10:41:00Z",
+    "version": "v1.24.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0133",
+    "service": "orders-service",
+    "ts": "2026-03-07T13:48:00Z",
+    "version": "cfg-0134"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0169",
+    "service": "ledger-service",
+    "ts": "2026-03-07T14:39:00Z",
+    "version": "cfg-0170"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.31.1",
+    "service": "api-gateway",
+    "ts": "2026-03-07T17:18:00Z",
+    "version": "v1.31.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.11.0",
+    "service": "orders-service",
+    "ts": "2026-03-08T17:33:00Z",
+    "version": "v2.12.0"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.2",
+    "service": "ledger-service",
+    "ts": "2026-03-10T14:14:00Z",
+    "version": "v1.24.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.12.0",
+    "service": "orders-service",
+    "ts": "2026-03-10T17:09:00Z",
+    "version": "v2.12.1"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.24.3",
+    "service": "ledger-service",
+    "ts": "2026-03-10T17:33:00Z",
+    "version": "v1.24.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.12.1",
+    "service": "orders-service",
+    "ts": "2026-03-11T15:44:00Z",
+    "version": "v2.12.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.0",
+    "service": "payments-service",
+    "ts": "2026-03-12T20:01:00Z",
+    "version": "v3.8.1"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "config",
+    "description": "Set PROVIDER_MAX_RETRIES=5 (was 2)",
+    "previous_version": "cfg-0236",
+    "service": "payments-service",
+    "ts": "2026-03-13T04:26:30Z",
+    "version": "cfg-0237"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Enable feature flag checkout_banner_v2",
+    "previous_version": "cfg-0237",
+    "service": "payments-service",
+    "ts": "2026-03-13T12:20:10Z",
+    "version": "cfg-0238"
+  }
+]

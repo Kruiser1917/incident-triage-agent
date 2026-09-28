@@ -1,0 +1,92 @@
+[
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.10.2",
+    "service": "orders-service",
+    "ts": "2026-03-01T14:54:00Z",
+    "version": "v2.10.3"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.32.2",
+    "service": "api-gateway",
+    "ts": "2026-03-01T16:58:00Z",
+    "version": "v1.32.3"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.1",
+    "service": "payments-service",
+    "ts": "2026-03-02T10:51:00Z",
+    "version": "v3.9.2"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-03-04T09:58:00Z",
+    "version": "v1.23.0"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.10.3",
+    "service": "orders-service",
+    "ts": "2026-03-06T17:19:00Z",
+    "version": "v2.10.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.23.0",
+    "service": "ledger-service",
+    "ts": "2026-03-06T17:46:00Z",
+    "version": "v1.23.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set STATEMENT_PAGE_SIZE=200 (was 100)",
+    "previous_version": "cfg-0124",
+    "service": "ledger-service",
+    "ts": "2026-03-07T10:50:00Z",
+    "version": "cfg-0125"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.23.1",
+    "service": "ledger-service",
+    "ts": "2026-03-07T10:54:00Z",
+    "version": "v1.23.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-03-07T17:43:00Z",
+    "version": "v3.9.3"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Stream account statements directly from the database",
+    "previous_version": "v1.23.2",
+    "service": "ledger-service",
+    "ts": "2026-03-08T08:36:30Z",
+    "version": "v1.23.3"
+  }
+]

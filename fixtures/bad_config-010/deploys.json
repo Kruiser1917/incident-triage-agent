@@ -1,0 +1,92 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.19.1",
+    "service": "ledger-service",
+    "ts": "2026-03-12T10:00:00Z",
+    "version": "v1.19.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.9.2",
+    "service": "payments-service",
+    "ts": "2026-03-12T17:10:00Z",
+    "version": "v3.9.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0136",
+    "service": "ledger-service",
+    "ts": "2026-03-13T10:00:00Z",
+    "version": "cfg-0137"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add /api/v1/payments/{id}/refunds route",
+    "previous_version": "v1.30.2",
+    "service": "api-gateway",
+    "ts": "2026-03-13T17:05:00Z",
+    "version": "v1.30.3"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.19.2",
+    "service": "ledger-service",
+    "ts": "2026-03-14T11:34:00Z",
+    "version": "v1.19.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.9.3",
+    "service": "payments-service",
+    "ts": "2026-03-14T17:19:00Z",
+    "version": "v3.9.4"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.30.3",
+    "service": "api-gateway",
+    "ts": "2026-03-18T11:19:00Z",
+    "version": "v1.30.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.9.4",
+    "service": "payments-service",
+    "ts": "2026-03-18T15:38:00Z",
+    "version": "v3.9.5"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Update CORS allowlist for partner dashboard",
+    "previous_version": "v1.30.4",
+    "service": "api-gateway",
+    "ts": "2026-03-19T17:49:00Z",
+    "version": "v1.30.5"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "config",
+    "description": "Set DB_STATEMENT_TIMEOUT=50ms (was 5s)",
+    "previous_version": "cfg-0137",
+    "service": "ledger-service",
+    "ts": "2026-03-19T20:28:28Z",
+    "version": "cfg-0138"
+  }
+]

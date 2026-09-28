@@ -1,0 +1,83 @@
+[
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0289",
+    "service": "api-gateway",
+    "ts": "2026-03-11T13:26:00Z",
+    "version": "cfg-0290"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.13.1",
+    "service": "orders-service",
+    "ts": "2026-03-12T11:55:00Z",
+    "version": "v2.14.0"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0312",
+    "service": "payments-service",
+    "ts": "2026-03-12T13:36:00Z",
+    "version": "cfg-0313"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.8.2",
+    "service": "payments-service",
+    "ts": "2026-03-12T16:44:00Z",
+    "version": "v3.8.3"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "config",
+    "description": "Enable feature flag order_export_csv",
+    "previous_version": "cfg-0372",
+    "service": "orders-service",
+    "ts": "2026-03-14T11:02:00Z",
+    "version": "cfg-0373"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.8.3",
+    "service": "payments-service",
+    "ts": "2026-03-14T15:07:00Z",
+    "version": "v3.8.4"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.20.2",
+    "service": "ledger-service",
+    "ts": "2026-03-14T16:19:00Z",
+    "version": "v1.21.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.14.0",
+    "service": "orders-service",
+    "ts": "2026-03-15T14:26:00Z",
+    "version": "v2.15.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.8.4",
+    "service": "payments-service",
+    "ts": "2026-03-18T11:22:42Z",
+    "version": "v3.8.5"
+  }
+]

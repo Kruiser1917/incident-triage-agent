@@ -1,0 +1,137 @@
+[
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.5.1",
+    "service": "payments-service",
+    "ts": "2026-03-08T10:57:00Z",
+    "version": "v3.5.2"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.5.2",
+    "service": "payments-service",
+    "ts": "2026-03-08T15:01:00Z",
+    "version": "v3.5.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Add 3DS2 frictionless flow for EU cards",
+    "previous_version": "v3.5.3",
+    "service": "payments-service",
+    "ts": "2026-03-09T10:17:00Z",
+    "version": "v3.5.4"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.1",
+    "service": "ledger-service",
+    "ts": "2026-03-09T11:42:00Z",
+    "version": "v1.22.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.5.4",
+    "service": "payments-service",
+    "ts": "2026-03-10T13:08:00Z",
+    "version": "v3.5.5"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.22.2",
+    "service": "ledger-service",
+    "ts": "2026-03-10T14:00:00Z",
+    "version": "v1.22.3"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.22.3",
+    "service": "ledger-service",
+    "ts": "2026-03-11T11:15:00Z",
+    "version": "v1.22.4"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0310",
+    "service": "payments-service",
+    "ts": "2026-03-11T11:27:00Z",
+    "version": "cfg-0311"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor order status webhooks",
+    "previous_version": "v2.15.1",
+    "service": "orders-service",
+    "ts": "2026-03-11T15:01:00Z",
+    "version": "v2.16.0"
+  },
+  {
+    "author": "m.chen",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.22.4",
+    "service": "ledger-service",
+    "ts": "2026-03-12T14:12:00Z",
+    "version": "v1.22.5"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add account statement endpoint",
+    "previous_version": "v1.22.5",
+    "service": "ledger-service",
+    "ts": "2026-03-12T17:19:00Z",
+    "version": "v1.23.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0288",
+    "service": "orders-service",
+    "ts": "2026-03-13T11:32:00Z",
+    "version": "cfg-0289"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.23.0",
+    "service": "ledger-service",
+    "ts": "2026-03-14T09:08:00Z",
+    "version": "v1.23.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set LOG_LEVEL=info (was debug)",
+    "previous_version": "cfg-0311",
+    "service": "payments-service",
+    "ts": "2026-03-14T12:54:08Z",
+    "version": "cfg-0312"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "config",
+    "description": "Set DB_POOL_SIZE=2 (was 20)",
+    "previous_version": "cfg-0289",
+    "service": "orders-service",
+    "ts": "2026-03-14T12:57:17Z",
+    "version": "cfg-0290"
+  }
+]

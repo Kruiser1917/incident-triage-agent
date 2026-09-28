@@ -1,0 +1,119 @@
+[
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.24.0",
+    "service": "ledger-service",
+    "ts": "2026-03-19T10:20:00Z",
+    "version": "v1.24.1"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.3",
+    "service": "payments-service",
+    "ts": "2026-03-19T15:05:00Z",
+    "version": "v3.6.4"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Upgrade SQLAlchemy to 2.0.36",
+    "previous_version": "v2.16.3",
+    "service": "orders-service",
+    "ts": "2026-03-20T09:48:00Z",
+    "version": "v2.17.0"
+  },
+  {
+    "author": "deploy-bot",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.30.0",
+    "service": "api-gateway",
+    "ts": "2026-03-20T16:20:00Z",
+    "version": "v1.30.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Refactor balance recalculation job",
+    "previous_version": "v1.24.1",
+    "service": "ledger-service",
+    "ts": "2026-03-21T09:44:00Z",
+    "version": "v1.24.2"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Upgrade pgx to v5.7.1",
+    "previous_version": "v1.24.2",
+    "service": "ledger-service",
+    "ts": "2026-03-22T13:33:00Z",
+    "version": "v1.24.3"
+  },
+  {
+    "author": "s.patel",
+    "change_type": "code",
+    "description": "Export provider decline codes as metrics",
+    "previous_version": "v3.6.4",
+    "service": "payments-service",
+    "ts": "2026-03-22T17:13:00Z",
+    "version": "v3.6.5"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Propagate x-request-id to upstream services",
+    "previous_version": "v1.30.1",
+    "service": "api-gateway",
+    "ts": "2026-03-24T11:38:00Z",
+    "version": "v1.30.2"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Bump Spring Boot to 3.3.5",
+    "previous_version": "v3.6.5",
+    "service": "payments-service",
+    "ts": "2026-03-24T13:49:00Z",
+    "version": "v3.7.0"
+  },
+  {
+    "author": "r.okafor",
+    "change_type": "code",
+    "description": "Add pagination to order history endpoint",
+    "previous_version": "v2.17.0",
+    "service": "orders-service",
+    "ts": "2026-03-25T09:13:00Z",
+    "version": "v2.17.1"
+  },
+  {
+    "author": "j.garcia",
+    "change_type": "code",
+    "description": "Batch ledger entry inserts",
+    "previous_version": "v1.24.3",
+    "service": "ledger-service",
+    "ts": "2026-03-25T16:03:00Z",
+    "version": "v1.24.4"
+  },
+  {
+    "author": "a.kowalski",
+    "change_type": "code",
+    "description": "Improve idempotency key logging",
+    "previous_version": "v3.7.0",
+    "service": "payments-service",
+    "ts": "2026-03-25T17:07:00Z",
+    "version": "v3.7.1"
+  },
+  {
+    "author": "l.nguyen",
+    "change_type": "code",
+    "description": "Cache merchant risk profiles in memory to cut scoring latency",
+    "previous_version": "v3.7.1",
+    "service": "payments-service",
+    "ts": "2026-03-26T07:43:00Z",
+    "version": "v3.7.2"
+  }
+]
